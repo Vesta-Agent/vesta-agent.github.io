@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vesta-agent.github.io/sitemap.xml
