@@ -14,6 +14,8 @@ I={'voice':'<path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><pat
 'lock':'<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>'}
 GH='<svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>'
 RP='https://github.com/Vesta-Agent/vesta-agent-releases'
+TG='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>'
+SUP='https://t.me/VestaAgentSupportBot'
 DL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M6 10l6 6 6-6M4 20h16"/></svg>'
 title='Vesta Agent - Personal AI Assistant for Windows, Android & Linux'
 desc='Vesta Agent is a free personal AI assistant for Windows, Android and Linux with voice calls, screen vision, phone control, multi-agent group chat, Telegram, proxy support and memory that stays on your device.'
@@ -41,7 +43,7 @@ P=[('win','Windows 10 / 11','64-bit installer',['Run the installer.','If SmartSc
 ('android','Android','APK for phones and tablets',['Download the APK on your phone.','Allow installing from this source when asked.','Open the app and follow setup.']),
 ('deb','Linux .deb','Ubuntu, Debian, Mint',['Download the .deb file.','Run <code>sudo apt install ./VestaAgent-*.deb</code>','Launch it from your apps.']),
 ('appimage','Linux AppImage','Any distribution',['Download the AppImage.','Run <code>chmod +x VestaAgent-*.AppImage</code>','Double-click to start.'])]
-Q=[('Is Vesta Agent free?','Yes. The app is free. You use your own AI key, for example a free Gemini or OpenRouter key, or run models offline with Ollama.'),
+Q=[('How do I get help or report a bug?','Message our support bot on Telegram, @VestaAgentSupportBot. Send a description, screenshots or a voice message and you get a ticket number. Replies arrive in the same chat.'),('Is Vesta Agent free?','Yes. The app is free. You use your own AI key, for example a free Gemini or OpenRouter key, or run models offline with Ollama.'),
 ('Where is my data stored?','Only on your own device: chats, memory, agents, settings and encrypted keys. There is no Vesta server or online database.'),
 ('Does it work in Iran?','Yes. Add a proxy in Settings, for example the local port from v2rayN or NekoBox, and choose which services use it. A built-in guide shows each step.'),
 ('Which AI models does it support?','Gemini, OpenRouter, OpenAI-compatible providers and local models through Ollama.'),
@@ -88,7 +90,7 @@ html=f'''<!doctype html>
 <body>
 <div class="glow" aria-hidden="true"><i></i><i></i></div><div class="noise" aria-hidden="true"></div>
 <nav aria-label="Main"><a class="brand" href="./"><img src="assets/logo-256.webp" alt="" width="28" height="28">Vesta Agent</a>
-<ul><li><a href="#features">Features</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#download">Download</a></li><li><a href="#faq">FAQ</a></li><li><a href="#privacy">Privacy</a></li></ul>
+<ul><li><a href="#features">Features</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#download">Download</a></li><li><a href="#faq">FAQ</a></li><li><a href="#support">Support</a></li><li><a href="#privacy">Privacy</a></li></ul>
 <a class="ghl" href="{RP}" aria-label="Vesta Agent on GitHub" title="GitHub">{GH}</a><a class="pill" href="#download">Get the app</a></nav>
 <main>
 <header class="hero">
@@ -109,11 +111,13 @@ html=f'''<!doctype html>
 <section id="download"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Download</span><h2>Free. Pick your <span class="serif">platform.</span></h2><p>Latest version: v<span data-ver>1.4.0</span>. Installs in under a minute.</p></div><div class="dl">{plats}</div>
 <p class="cap" style="margin-top:28px"><a href="https://github.com/Vesta-Agent/vesta-agent-releases/releases" style="text-decoration:underline">All releases and SHA256 checksums</a> &middot; <a class="ghi" href="{RP}">{GH}View on GitHub</a></p></div></section>
 <section id="faq"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>FAQ</span><h2>Questions, <span class="serif">answered.</span></h2></div><div class="faq">{faq}</div></div></section>
+<section id="support"><div class="wrap"><div class="priv rv"><div><span class="eyebrow"><b></b>Support</span><h2>Need a hand? <span class="serif">Just ask.</span></h2></div>
+<div><p style="color:var(--mu);margin:0 0 22px">Report a bug, ask a question or send a suggestion to our Telegram support bot. Screenshots, files and voice messages are welcome. You get a ticket number, and we reply right in the chat.</p><a class="btn" href="{SUP}" rel="noopener">{TG}<span>Support on Telegram</span></a></div></div></div></section>
 <section id="privacy"><div class="wrap"><div class="priv rv"><div><span class="eyebrow"><b></b>Privacy</span><h2>Your data <span class="serif">never</span> leaves home.</h2></div>
 <ul><li>No Vesta servers and no online database. Chats, memory and settings live on your device.</li><li>API keys are encrypted locally. Passwords, keys and card details are never saved to memory.</li><li>Only the message you send goes to the AI provider whose key you added. With Ollama, nothing leaves at all.</li><li>A visible indicator is always on while the microphone or screen sharing is active.</li></ul></div></div></section>
 <section class="final"><div class="wrap rv"><h2>Meet your <span class="serif">new agent.</span></h2><a class="btn dlbtn" href="#download">{DL}<span>Download <span class="os"></span></span></a></div></section>
 </main>
-<footer><div class="wrap"><span>Made by Persian Studio &middot; &copy; 2026</span><a class="ghi" href="{RP}">{GH}GitHub</a></div></footer>
+<footer><div class="wrap"><span>Made by Persian Studio &middot; &copy; 2026</span><span style="display:inline-flex;gap:22px;flex-wrap:wrap"><a class="ghi" href="{SUP}">{TG}Get help</a><a class="ghi" href="{RP}">{GH}GitHub</a></span></div></footer>
 <script src="assets/main.js" defer></script>
 </body>
 </html>
