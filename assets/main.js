@@ -1,7 +1,7 @@
 (function(){
 var R='https://github.com/Vesta-Agent/vesta-agent-releases/releases/latest/download/';
-var A={win:'VestaAgent-1.4.0-windows-x64-setup.exe',win7:'VestaAgent-1.4.0-windows7-8-legacy-setup.exe',android:'VestaAgent-1.4.0-android.apk',deb:'VestaAgent-1.4.0-linux-amd64.deb',appimage:'VestaAgent-1.4.0-linux-x86_64.AppImage'};
-var N={win:'Windows',win7:'Windows 7/8',android:'Android',deb:'Linux',appimage:'Linux'},ver='1.4.0';
+var A={win:'VestaAgent-1.4.1-windows-x64-setup.exe',win7:'VestaAgent-1.4.1-windows7-8-legacy-setup.exe',android:'VestaAgent-1.4.1-android.apk',deb:'VestaAgent-1.4.1-linux-amd64.deb',appimage:'VestaAgent-1.4.1-linux-x86_64.AppImage'};
+var N={win:'Windows',win7:'Windows 7/8',android:'Android',deb:'Linux',appimage:'Linux'},ver='1.4.1';
 function apply(){document.querySelectorAll('[data-asset]').forEach(function(a){a.href=R+A[a.dataset.asset]});
  document.querySelectorAll('[data-ver]').forEach(function(e){e.textContent=ver});
  var u=navigator.userAgent,k='win';
