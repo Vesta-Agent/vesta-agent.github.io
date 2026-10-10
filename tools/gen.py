@@ -49,7 +49,7 @@ Q=[('How do I get help or report a bug?','Message our support bot on Telegram, @
 ('Which AI models does it support?','Gemini, OpenRouter, OpenAI-compatible providers and local models through Ollama.'),
 ('Will it update automatically?','Yes. It checks quietly at launch and only shows a window when a new version is available.'),
 ('Why does Windows show a blue warning?','The installer is not yet signed with a paid certificate. Click More info, then Run anyway.')]
-ld={"@context":"https://schema.org","@type":"SoftwareApplication","name":"Vesta Agent","url":S,"image":S+"assets/og-image.png","screenshot":S+"assets/shots/chat.webp","description":desc,"applicationCategory":"ProductivityApplication","operatingSystem":"Windows 7, Windows 8, Windows 10, Windows 11, Android, Linux","softwareVersion":"1.4.1","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"Persian Studio","url":"https://github.com/Vesta-Agent"},"downloadUrl":"https://github.com/Vesta-Agent/vesta-agent-releases/releases/latest"}
+ld={"@context":"https://schema.org","@type":"SoftwareApplication","name":"Vesta Agent","url":S,"image":S+"assets/og-image.png","screenshot":S+"assets/shots/chat.webp","description":desc,"applicationCategory":"ProductivityApplication","operatingSystem":"Windows 7, Windows 8, Windows 10, Windows 11, Android, Linux","softwareVersion":"1.5.0","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"Persian Studio","url":"https://github.com/Vesta-Agent"},"downloadUrl":"https://github.com/Vesta-Agent/vesta-agent-releases/releases/latest"}
 fq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in Q]}
 def tile(i,f):
   k,h,p,w,sh,alt=f
@@ -97,19 +97,19 @@ html=f'''<!doctype html>
 <div class="stage" aria-hidden="true"><div class="orb"></div><canvas id="gl"></canvas></div>
 <div class="inner">
 <img class="mark" src="assets/logo-256.webp" srcset="assets/logo-256.webp 1x, assets/logo-512.webp 2x" alt="Vesta Agent logo" width="84" height="84" fetchpriority="high">
-<span class="eyebrow"><b></b>Personal AI assistant &middot; v<span data-ver>1.4.1</span></span>
+<span class="eyebrow"><b></b>Personal AI assistant &middot; v<span data-ver>1.5.0</span></span>
 <h1>Vesta Agent<br><span class="serif">works for you.</span></h1>
 <p class="lede">Your own AI agent that talks, sees your screen, controls your phone and gets things done. Everything stays on your device.</p>
 <div class="cta"><a class="btn dlbtn" href="#download">{DL}<span>Download <span class="os"></span></span></a><a class="btn alt" href="#gallery">See it in action</a></div>
-<span class="ver">Free for Windows, Android and Linux &middot; Version <span data-ver>1.4.1</span></span>
+<span class="ver">Free for Windows, Android and Linux &middot; Version <span data-ver>1.5.0</span></span>
 </div><span class="scroll" aria-hidden="true"></span>
 </header>
 <section id="features"><div class="wrap"><div class="head rv"><span class="eyebrow"><b></b>Capabilities</span><h2>Everything an assistant <span class="serif">should</span> do.</h2><p>One app, powerful agents, and no servers of ours in between.</p></div><div class="bento">{tiles}</div></div></section>
 <section id="gallery"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Inside the app</span><h2>Designed to feel <span class="serif">calm.</span></h2><p>Real screens from Vesta Agent 1.4, shown with demo content.</p></div>
 <div class="gallery rv"><div class="tabs" role="tablist" aria-label="Screens">{tabs}</div><div><div class="frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="scr">{imgs}</div></div><p class="cap" id="cap" aria-live="polite">{G[0][3]}</p></div></div>
 <div class="phones">{phones}</div></div></section>
-<section id="download"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Download</span><h2>Free. Pick your <span class="serif">platform.</span></h2><p>Latest version: v<span data-ver>1.4.1</span>. Installs in under a minute.</p></div><div class="dl">{plats}</div>
-<p class="cap" style="margin-top:28px"><b>New in 1.4.1:</b> phone control on Android now works for every agent once Accessibility is on, plus website and Telegram support links in Settings. <a href="https://github.com/Vesta-Agent/vesta-agent-releases/releases/tag/v1.4.1" style="text-decoration:underline">Release notes</a></p>
+<section id="download"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Download</span><h2>Free. Pick your <span class="serif">platform.</span></h2><p>Latest version: v<span data-ver>1.5.0</span>. Installs in under a minute.</p></div><div class="dl">{plats}</div>
+<p class="cap" style="margin-top:28px"><b>New in 1.5.0:</b> smarter device control. Agents act on screen elements instead of pixels, check every step and retry another way, and understand short requests better. Also fixes the Update now button. Linux stays on 1.4.1 for now. <a href="https://github.com/Vesta-Agent/vesta-agent-releases/releases/tag/v1.5.0" style="text-decoration:underline">Release notes</a></p>
 <p class="cap" style="margin-top:28px"><a href="https://github.com/Vesta-Agent/vesta-agent-releases/releases" style="text-decoration:underline">All releases and SHA256 checksums</a> &middot; <a class="ghi" href="{RP}">{GH}View on GitHub</a></p></div></section>
 <section id="faq"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>FAQ</span><h2>Questions, <span class="serif">answered.</span></h2></div><div class="faq">{faq}</div></div></section>
 <section id="support"><div class="wrap"><div class="priv rv"><div><span class="eyebrow"><b></b>Support</span><h2>Need a hand? <span class="serif">Just ask.</span></h2></div>
@@ -134,7 +134,7 @@ html=html.replace('<link rel="icon" type="image/png" href="/assets/favicon-32.pn
 html=html.replace('<!-- google-site-verification: paste the Google Search Console meta tag here, e.g. <meta name="google-site-verification" content="XXXX"> -->\n','')
 PAGES=[('features','Features','Vesta Agent Features - Voice, Screen Vision, Phone Control','Vesta Agent features: voice calls, screen vision, Android phone control, multi-agent group chat, local memory, multi-key failover, Telegram, proxy for Iran and offline mode with Ollama.'),
 ('screenshots','Screenshots','Vesta Agent Screenshots - Desktop and Android','Real screenshots of Vesta Agent on desktop and Android: chat, group chat, tools, screen sharing, voice call, agent store, Telegram and proxy settings.','gallery'),
-('download','Download','Download Vesta Agent 1.4.1 for Windows, Android and Linux','Download Vesta Agent free for Windows 10/11, Windows 7/8, Android (APK) and Linux (.deb and AppImage), with step-by-step install instructions.'),
+('download','Download','Download Vesta Agent 1.5.0 for Windows, Android and Linux','Download Vesta Agent free for Windows 10/11, Windows 7/8, Android (APK) and Linux (.deb and AppImage), with step-by-step install instructions.'),
 ('faq','FAQ','Vesta Agent FAQ - Common Questions','Answers to common questions about Vesta Agent: price, data storage, using it in Iran, supported AI models, updates and the Windows SmartScreen warning.'),
 ('support','Support','Vesta Agent Support - Get Help on Telegram','Get help with Vesta Agent: report a bug, ask a question or send a suggestion to the official Telegram support bot @VestaAgentSupportBot.'),
 ('privacy','Privacy','Vesta Agent Privacy - Your Data Stays on Your Device','How Vesta Agent keeps your data private: no Vesta servers, no online database, locally encrypted API keys and memory stored only on your device.')]
