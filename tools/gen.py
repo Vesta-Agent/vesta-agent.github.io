@@ -144,7 +144,7 @@ for p in PAGES:
   sid=p[4] if len(p)>4 else p[0]
   html=html.replace(f'href="#{sid}"', f'href="/{p[0]}/"')
 html=html.replace('<li><a href="/screenshots/">Gallery</a></li>','<li><a href="/screenshots/">Screenshots</a></li>')
-foot_links='<nav aria-label="Footer" style="display:flex;gap:18px;flex-wrap:wrap;width:100%;margin-bottom:14px">'+''.join(f'<a href="/{p[0]}/">{p[1]}</a>' for p in PAGES)+'</nav>'
+foot_links='<div class="flinks" role="navigation" aria-label="Footer" style="display:flex;gap:18px;flex-wrap:wrap;width:100%;margin-bottom:14px">'+''.join(f'<a href="/{p[0]}/">{p[1]}</a>' for p in PAGES)+'</div>'
 html=html.replace('<footer><div class="wrap">','<footer><div class="wrap" style="flex-wrap:wrap">'+foot_links,1)
 SHOTS=[(S+f'assets/shots/{k}.webp',c) for k,a,b,c in G]+[(S+f'assets/shots/{k}.webp','Vesta Agent on Android: '+n) for k,n in PH]
 ld.update({"screenshot":[u for u,_ in SHOTS],"publisher":{"@id":S+"#org"},"@id":S+"#app"}); ld.pop("@context",None)
