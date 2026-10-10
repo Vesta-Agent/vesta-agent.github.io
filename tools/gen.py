@@ -86,7 +86,6 @@ html=f'''<!doctype html>
 <link rel="preload" as="image" href="assets/logo-256.webp">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">{json.dumps(ld)}</script>
-<script type="application/ld+json">{json.dumps(fq)}</script>
 </head>
 <body>
 <div class="glow" aria-hidden="true"><i></i><i></i></div><div class="noise" aria-hidden="true"></div>
@@ -124,4 +123,49 @@ html=f'''<!doctype html>
 </body>
 </html>
 '''
+
+# ---------- multi-page output (home + real subpages for sitelinks) ----------
+import re, os, datetime
+TODAY=datetime.date.today().isoformat()
+html=re.sub(r'(src|href|data-src|srcset)="assets/', r'\1="/assets/', html).replace('assets/logo-512.webp 2x','/assets/logo-512.webp 2x')
+html=html.replace('href="favicon.ico"','href="/favicon.ico"').replace('class="brand" href="./"','class="brand" href="/"')
+html=html.replace('<link rel="icon" type="image/png" href="/assets/favicon-32.png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">',
+ '<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">')
+html=html.replace('<!-- google-site-verification: paste the Google Search Console meta tag here, e.g. <meta name="google-site-verification" content="XXXX"> -->\n','')
+PAGES=[('features','Features','Vesta Agent Features - Voice, Screen Vision, Phone Control','Vesta Agent features: voice calls, screen vision, Android phone control, multi-agent group chat, local memory, multi-key failover, Telegram, proxy for Iran and offline mode with Ollama.'),
+('screenshots','Screenshots','Vesta Agent Screenshots - Desktop and Android','Real screenshots of Vesta Agent on desktop and Android: chat, group chat, tools, screen sharing, voice call, agent store, Telegram and proxy settings.','gallery'),
+('download','Download','Download Vesta Agent 1.4.1 for Windows, Android and Linux','Download Vesta Agent free for Windows 10/11, Windows 7/8, Android (APK) and Linux (.deb and AppImage), with step-by-step install instructions.'),
+('faq','FAQ','Vesta Agent FAQ - Common Questions','Answers to common questions about Vesta Agent: price, data storage, using it in Iran, supported AI models, updates and the Windows SmartScreen warning.'),
+('support','Support','Vesta Agent Support - Get Help on Telegram','Get help with Vesta Agent: report a bug, ask a question or send a suggestion to the official Telegram support bot @VestaAgentSupportBot.'),
+('privacy','Privacy','Vesta Agent Privacy - Your Data Stays on Your Device','How Vesta Agent keeps your data private: no Vesta servers, no online database, locally encrypted API keys and memory stored only on your device.')]
+def sec(sid): return re.search(r'<section id="%s">.*?</section>' % sid, html, re.S).group(0)
+SECS={k:sec(p[4] if len(p)>4 else k) for p in PAGES for k in [p[0]]}
+for p in PAGES:
+  sid=p[4] if len(p)>4 else p[0]
+  html=html.replace(f'href="#{sid}"', f'href="/{p[0]}/"')
+html=html.replace('<li><a href="/screenshots/">Gallery</a></li>','<li><a href="/screenshots/">Screenshots</a></li>')
+foot_links='<nav aria-label="Footer" style="display:flex;gap:18px;flex-wrap:wrap;width:100%;margin-bottom:14px">'+''.join(f'<a href="/{p[0]}/">{p[1]}</a>' for p in PAGES)+'</nav>'
+html=html.replace('<footer><div class="wrap">','<footer><div class="wrap" style="flex-wrap:wrap">'+foot_links,1)
+SHOTS=[(S+f'assets/shots/{k}.webp',c) for k,a,b,c in G]+[(S+f'assets/shots/{k}.webp','Vesta Agent on Android: '+n) for k,n in PH]
+ld.update({"screenshot":[u for u,_ in SHOTS],"publisher":{"@id":S+"#org"},"@id":S+"#app"}); ld.pop("@context",None)
+graph={"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":S+"#org","name":"Persian Studio","url":S,"logo":{"@type":"ImageObject","url":S+"assets/logo-512.png","width":512,"height":512},"sameAs":[RP,SUP]},
+ {"@type":"WebSite","@id":S+"#website","name":"Vesta Agent","alternateName":"Vesta Agent by Persian Studio","url":S,"publisher":{"@id":S+"#org"},"inLanguage":"en"},ld]}
+html=re.sub(r'<script type="application/ld\+json">.*?</script>', lambda m:'<script type="application/ld+json">'+json.dumps(graph)+'</script>', html, count=1, flags=re.S)
 open('index.html','w').write(html)
+head_end=html.index('</head>'); body_start=html.index('<main>'); main_end=html.index('</main>')
+final=re.search(r'<section class="final">.*?</section>', html, re.S).group(0)
+for p in PAGES:
+  slug,name,t,d=p[:4]; url=S+slug+'/'
+  h=html[:head_end]
+  h=h.replace(f'<title>{title}</title>',f'<title>{t}</title>').replace(f'content="{desc}"',f'content="{d}"').replace(f'content="{title}"',f'content="{t}"')
+  h=h.replace(f'<link rel="canonical" href="{S}">',f'<link rel="canonical" href="{url}">').replace(f'<meta property="og:url" content="{S}">',f'<meta property="og:url" content="{url}">')
+  h=re.sub(r'<script type="application/ld\+json">.*?</script>','',h,flags=re.S).replace('<link rel="preload" as="image" href="/assets/logo-256.webp">\n','')
+  bc={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Vesta Agent","item":S},{"@type":"ListItem","position":2,"name":name,"item":url}]}
+  h+=f'<script type="application/ld+json">{json.dumps(bc)}</script>\n'
+  if slug=='faq': h+=f'<script type="application/ld+json">{json.dumps(fq)}</script>\n'
+  crumbs=f'<div class="wrap" style="padding-top:110px"><p class="cap" style="text-align:left;margin:0"><a href="/">Vesta Agent</a> &rsaquo; {name}</p></div>'
+  body=html[head_end:body_start]+'<main>'+crumbs+SECS[slug].replace('<h2>','<h1 class="h2">',1).replace('</h2>','</h1>',1)+final+html[main_end:]
+  os.makedirs(slug,exist_ok=True); open(f'{slug}/index.html','w').write(h+body)
+imgs_xml=''.join(f'<image:image><image:loc>{u}</image:loc></image:image>' for u,_ in SHOTS)
+urls=[(S,imgs_xml+f'<image:image><image:loc>{S}assets/og-image.png</image:loc></image:image><image:image><image:loc>{S}assets/logo-512.png</image:loc></image:image>')]+[(S+p[0]+'/',imgs_xml if p[0]=='screenshots' else '') for p in PAGES]
+open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+''.join(f'<url><loc>{u}</loc><lastmod>{TODAY}</lastmod>{x}</url>\n' for u,x in urls)+'</urlset>\n')

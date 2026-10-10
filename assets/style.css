@@ -88,3 +88,4 @@ footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mu);font-size
 .ghl{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;color:var(--mu);border:1px solid var(--line);transition:color .25s,border-color .25s}.ghl:hover{color:var(--tx);border-color:rgba(150,160,255,.4)}
 nav ul+.ghl{margin-inline-start:4px}@media(max-width:640px){.ghl{margin-inline-start:auto}nav .pill{margin-inline-start:0}}
 .ghi{display:inline-flex;align-items:center;gap:7px;color:var(--mu)}.ghi:hover{color:var(--tx)}.ghi svg{width:16px;height:16px}
+h1.h2{font-size:clamp(32px,5vw,58px);line-height:1.04;letter-spacing:-.03em;font-weight:600;margin:18px 0 0}
