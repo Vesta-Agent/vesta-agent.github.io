@@ -65,6 +65,7 @@ html=f'''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="google-site-verification" content="yGoRlRHKLWo7D8TaW2UB1KL87QgpAZQO2nwReUqoX0I">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
