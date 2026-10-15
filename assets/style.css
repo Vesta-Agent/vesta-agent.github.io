@@ -64,7 +64,7 @@ h2{font-size:clamp(32px,5vw,58px);line-height:1.04;letter-spacing:-.03em;font-we
 .phone:nth-child(2n){transform:translateY(40px)}.phone:hover{transform:translateY(-8px)}
 .phone .s{aspect-ratio:412/915;border-radius:30px;overflow:hidden;background:#000}.phone .s img{width:100%;height:100%;object-fit:cover}
 .phone p{text-align:center;font-size:13px;color:var(--mu);padding:10px 0 4px}
-.dl{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.dl{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .plat{padding:24px;border-radius:20px;border:1px solid var(--line);background:var(--glass);display:flex;flex-direction:column;transition:border-color .3s}
 .plat:hover{border-color:rgba(140,150,255,.35)}.plat.rec{border-color:rgba(142,120,255,.55);background:linear-gradient(180deg,rgba(100,100,255,.1),transparent)}
 .plat h3{font-size:17px}.plat small{color:var(--mu);font-size:13.5px}
