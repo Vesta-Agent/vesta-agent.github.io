@@ -16,6 +16,10 @@ I={'spark':'<path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.
 'send':'<path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/>',
 'globe':'<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>',
 'off':'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',
+'palette':'<path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.6-.9 1.2-1.8-.5-1 .2-2.2 1.3-2.2H17a4 4 0 0 0 4-4c0-5.5-4-10-9-10z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/>',
+'chip':'<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M10 10h4v4h-4zM9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>',
+'bg':'<path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4"/><circle cx="12" cy="12" r="3"/>',
+'pkg':'<path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/>',
 'lock':'<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>'}
 GH='<svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>'
 RP='https://github.com/Vesta-Agent/vesta-agent-releases'
@@ -23,23 +27,30 @@ TG='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentC
 SUP='https://t.me/VestaAgentSupportBot'
 DL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M6 10l6 6 6-6M4 20h16"/></svg>'
 title='Vesta Agent - Personal AI Assistant for Windows, Android & Linux'
-desc='Vesta Agent is a free personal AI assistant for Windows, Android and Linux with voice calls, screen vision, phone control, multi-agent group chat, Telegram, proxy support and memory that stays on your device.'
-F=[('voice','Voice calls','Talk naturally and hear spoken replies. Share your screen mid-call and ask what is wrong.','w3','voice','Vesta Agent voice call screen'),
-('eye','Screen vision','With your permission the agent sees your screen, explains it and helps you fix it.','w3','share','Vesta Agent chat while the agent can see the screen'),
+desc='Vesta Agent is a free personal AI assistant for Windows, Android and Linux with voice calls, screen vision, phone control, background tasks you can steer from chat, multi-agent group chat, NVIDIA NIM and many other models, 15 themes and memory that stays on your device.'
+F=[('bg','Keeps working while you chat','Long tasks run in the background with a live status card. Keep chatting, ask how it is going, change the plan or cancel it, and the task carries on.','w4','live','Vesta Agent answering a question while a task runs in the background'),
 ('phone','Phone control','The agent taps, types and navigates on Android, even without a computer.','',None,None),
+('voice','Voice calls','Talk naturally and hear spoken replies. Share your screen mid-call and ask what is wrong.','w3','voice','Vesta Agent voice call screen'),
+('eye','Screen vision','With your permission the agent sees your screen, explains it and helps you fix it.','w3','share','Vesta Agent chat while the agent can see the screen'),
 ('group','Multi-agent group chat','Put specialised agents in one room and let them split the work.','',None,None),
 ('mem','Memory stored locally','Smart memory that lives only on your device. View, edit or wipe it at any time.','',None,None),
-('key','Multi-key failover','Add several API keys per agent. When one runs out, the next one continues the same task.','w4','keys','Vesta Agent API keys settings'),
 ('send','Telegram','Connect your own bot or personal account and schedule messages.','',None,None),
+('key','Multi-key failover','Add several API keys per agent. When one runs out, the next one continues the same task.','w4','keys','Vesta Agent API keys settings'),
 ('globe','Proxy for Iran','Real HTTP and SOCKS5 proxy per service, with a built-in step-by-step guide.','',None,None),
 ('off','Offline mode','Run entirely on your computer with Ollama. Nothing leaves the machine.','',None,None),
 ('lock','Privacy first','No accounts and no cloud database. Keys are encrypted on your device.','',None,None),
 ('island','Floating island','A small pill that stays on top: progress, approvals and quick chat from anywhere.','',None,None),
+('palette','15 themes','Midnight, Aurora, Ocean, AMOLED black, Paper and more, applied with a smooth reveal. Each agent keeps its own shape and color.','w4','themes','Vesta Agent theme gallery in Settings'),
 ('files','Files from agents','Agents create PDF, Word, Excel, ZIP and media, with previews and a safety warning before programs.','',None,None),
+('chip','NVIDIA NIM and more models','Gemini, OpenAI, Anthropic, xAI, OpenRouter, DeepSeek, Groq, Mistral, NVIDIA NIM and local models, with a searchable model list.','w4','models','Searchable NVIDIA NIM model list in Vesta Agent'),
 ('remind','Reminders that fire','Scheduled tasks and reminders run even when the app is closed, on Windows and Android.','',None,None),
-('lang','10 languages','English by default. Switch any time and the whole app updates at once, including Persian and Arabic right-to-left.','w3',None,None),
-('spark','A calm, modern design','Glass surfaces, an animated mascot, gentle motion and sounds, with a lighter mode for older PCs and phones.','w3',None,None)]
-G=[('chat','Chat','A real assistant, not a chatbot','Vesta Agent chat with a weekly plan'),
+('lang','10 languages','English by default. Switch any time and the whole app updates at once, including Persian and Arabic right-to-left.','',None,None),
+('pkg','Builds apps for you','On Windows the agent can write a small program and package it as an .exe, an Android .apk (with the Android SDK installed) or an installable web app, icon included.','',None,None),
+('spark','A calm, modern design','Glass surfaces, gentle motion and sounds, an animated lock screen and update window, and a Reduce animations mode for older PCs and phones.','',None,None)]
+G=[('live','Background tasks','Chat while it works','Vesta Agent answering while a task runs in the background'),
+('themes','Themes','15 color themes','Theme gallery with 15 themes'),
+('models','Models','NVIDIA NIM and more','Searchable model list with NVIDIA NIM models'),
+('chat','Chat','A real assistant, not a chatbot','Vesta Agent chat with a weekly plan'),
 ('group','Group chat','Agents working together','Group chat where Researcher, Server Ops and Writer split a task'),
 ('tools','Tools','Runs commands on your machine','Agent running tools and reporting the result'),
 ('share','Screen sharing','The agent sees what you see','Screen sharing indicator while chatting'),
@@ -47,7 +58,7 @@ G=[('chat','Chat','A real assistant, not a chatbot','Vesta Agent chat with a wee
 ('store','Agents','Ready-made specialists','Agent store with ready-made agents'),
 ('telegram','Telegram','Bot or personal account','Telegram settings'),
 ('proxy','Proxy','Works where services are blocked','Proxy settings with per-service routing')]
-PH=[('m-chat','Chat'),('m-group','Group chat'),('m-side','Agents'),('m-voice','Voice call')]
+PH=[('m-live','Background task'),('m-themes','Themes'),('m-models','Models'),('m-chat','Chat')]
 P=[('win','Windows 10 / 11','64-bit installer',['Run the installer.','If SmartScreen appears, click More info, then Run anyway.','Open Vesta Agent from the Start menu.']),
 ('win7','Windows 7 / 8','Legacy build for older PCs',['Run the installer.','If warned, click More info, then Run anyway.','Open Vesta Agent from the Start menu.']),
 ('android','Android','APK for phones and tablets',['Download the APK on your phone.','Allow installing from this source when asked.','Open the app and follow setup.']),
@@ -55,12 +66,14 @@ P=[('win','Windows 10 / 11','64-bit installer',['Run the installer.','If SmartSc
 ('deb','Linux .deb','Ubuntu, Debian, Mint',['Download the .deb file.','Run <code>sudo apt install ./VestaAgent-*.deb</code>','Launch it from your apps.']),
 ('appimage','Linux AppImage','Any distribution',['Download the AppImage.','Run <code>chmod +x VestaAgent-*.AppImage</code>','Double-click to start.'])]
 Q=[('How do I get help or report a bug?','Message our support bot on Telegram, @VestaAgentSupportBot. Send a description, screenshots or a voice message and you get a ticket number. Replies arrive in the same chat.'),('Is Vesta Agent free?','Yes. The Windows and Android apps are free, and there is a free iPhone web app that connects to Vesta on your PC. You use your own AI key, for example a free Gemini or OpenRouter key, or run models offline with Ollama.'),
-('Where is my data stored?','Only on your own device: chats, memory, agents, settings and encrypted keys. There is no Vesta chat server. Optional anonymous usage stats (install id, version, OS and language) can be turned off in Settings.'),
+('Where is my data stored?','Only on your own device: chats, memory, agents, settings and encrypted keys. There is no Vesta chat server. Optional anonymous usage stats (a random install id, version, OS, language, country, device type and time in the app) can be turned off in Settings.'),
 ('Does it work in Iran?','Yes. Add a proxy in Settings, for example the local port from v2rayN or NekoBox, and choose which services use it. A built-in guide shows each step.'),
-('Which AI models does it support?','Gemini, OpenRouter, OpenAI-compatible providers and local models through Ollama.'),
-('Will it update automatically?','Yes. It checks quietly at launch and only shows a window when a new version is available.'),
+('Which AI models does it support?','Gemini, OpenAI, Anthropic, xAI (Grok), OpenRouter, DeepSeek, Groq, Mistral, Together, NVIDIA NIM, any OpenAI-compatible provider, and local models through Ollama or LM Studio.'),
+('Will it update automatically?','Yes. It checks quietly at launch and only shows a window when a new version is available, then downloads, verifies and installs it for you.'),
+('Can I keep chatting while the agent works?','Yes. Since 1.7 long tasks run in the background of their chat. Ask how it is going, add or change instructions, or cancel it, without stopping the work.'),
+('Who makes Vesta Agent?','Persian Studio, founded by SOBi and Mahan.'),
 ('Why does Windows show a blue warning?','The installer is not yet signed with a paid certificate. Click More info, then Run anyway.')]
-ld={"@context":"https://schema.org","@type":"SoftwareApplication","name":"Vesta Agent","url":S,"image":S+"assets/og-image.png","screenshot":S+"assets/shots/chat.webp","description":desc,"applicationCategory":"ProductivityApplication","operatingSystem":"Windows 7, Windows 8, Windows 10, Windows 11, Android, Linux","softwareVersion":"1.6.1","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"Persian Studio","url":"https://github.com/Vesta-Agent"},"downloadUrl":"https://github.com/Vesta-Agent/vesta-agent-releases/releases/latest"}
+ld={"@context":"https://schema.org","@type":"SoftwareApplication","name":"Vesta Agent","url":S,"image":S+"assets/og-image.png","screenshot":S+"assets/shots/chat.webp","description":desc,"applicationCategory":"ProductivityApplication","operatingSystem":"Windows 7, Windows 8, Windows 10, Windows 11, Android, Linux","softwareVersion":"1.7.0","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"Persian Studio","url":"https://github.com/Vesta-Agent"},"downloadUrl":"https://github.com/Vesta-Agent/vesta-agent-releases/releases/latest"}
 fq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in Q]}
 def tile(i,f):
   k,h,p,w,sh,alt=f
@@ -108,19 +121,19 @@ html=f'''<!doctype html>
 <div class="stage" aria-hidden="true"><div class="orb"></div><canvas id="gl"></canvas></div>
 <div class="inner">
 <img class="mark" src="assets/logo-256.webp" srcset="assets/logo-256.webp 1x, assets/logo-512.webp 2x" alt="Vesta Agent logo" width="84" height="84" fetchpriority="high">
-<span class="eyebrow"><b></b>Personal AI assistant &middot; v<span data-ver>1.6.1</span></span>
+<span class="eyebrow"><b></b>Personal AI assistant &middot; v<span data-ver>1.7.0</span></span>
 <h1>Vesta Agent<br><span class="serif">works for you.</span></h1>
 <p class="lede">Your own AI agent that talks, sees your screen, controls your phone and gets things done. Everything stays on your device.</p>
 <div class="cta"><a class="btn dlbtn" href="#download">{DL}<span>Download <span class="os"></span></span></a><a class="btn alt" href="#gallery">See it in action</a></div>
-<span class="ver">Free for Windows, Android, Linux and iPhone &middot; Version <span data-ver>1.6.1</span></span>
+<span class="ver">Free for Windows, Android, Linux and iPhone &middot; Version <span data-ver>1.7.0</span></span>
 </div><span class="scroll" aria-hidden="true"></span>
 </header>
 <section id="features"><div class="wrap"><div class="head rv"><span class="eyebrow"><b></b>Capabilities</span><h2>Everything an assistant <span class="serif">should</span> do.</h2><p>One app, powerful agents, and no servers of ours in between.</p></div><div class="bento">{tiles}</div></div></section>
-<section id="gallery"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Inside the app</span><h2>Designed to feel <span class="serif">calm.</span></h2><p>Real screens from Vesta Agent 1.4, shown with demo content.</p></div>
+<section id="gallery"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Inside the app</span><h2>Designed to feel <span class="serif">calm.</span></h2><p>Real screens from Vesta Agent, shown with demo content.</p></div>
 <div class="gallery rv"><div class="tabs" role="tablist" aria-label="Screens">{tabs}</div><div><div class="frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="scr">{imgs}</div></div><p class="cap" id="cap" aria-live="polite">{G[0][3]}</p></div></div>
 <div class="phones">{phones}</div></div></section>
-<section id="download"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Download</span><h2>Free. Pick your <span class="serif">platform.</span></h2><p>Latest version: v<span data-ver>1.6.1</span>. Installs in under a minute.</p></div><div class="dl">{plats}</div>
-<p class="cap" style="margin-top:28px"><b>New in 1.6.1:</b> voice calls fixed on Android and Windows, plus xAI (Grok) voice. <b>New in 1.6:</b> a modern redesign with animations and sounds, a floating island and open shortcut, agents that create and send any file (PDF, Word, Excel, ZIP, media and installers with a safety warning), reminders that fire when the app is closed, fixed voice, English by default with instant language switching in 10 languages, and a free iPhone web app. Linux stays on 1.4.1 for now. <a href="https://github.com/Vesta-Agent/vesta-agent-releases/releases/tag/v1.6.1" style="text-decoration:underline">Release notes</a></p>
+<section id="download"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Download</span><h2>Free. Pick your <span class="serif">platform.</span></h2><p>Latest version: v<span data-ver>1.7.0</span>. Installs in under a minute.</p></div><div class="dl">{plats}</div>
+<p class="cap" style="margin-top:28px"><b>New in 1.7:</b> keep chatting while a task runs in the background and steer or cancel it from chat, 15 themes, NVIDIA NIM with a searchable model list, apps built by the agent (.exe, .apk, web app), context-aware suggestions, an animated lock screen and update window, simple Open, Save and Share for files, automatic chat titles and a Reduce animations mode. <b>New in 1.6:</b> a modern redesign with animations and sounds, a floating island and open shortcut, agents that create and send any file (PDF, Word, Excel, ZIP, media and installers with a safety warning), reminders that fire when the app is closed, fixed voice, English by default with instant language switching in 10 languages, and a free iPhone web app. Linux stays on 1.4.1 for now. <a href="https://github.com/Vesta-Agent/vesta-agent-releases/releases/tag/v1.7.0" style="text-decoration:underline">Release notes</a></p>
 <div id="ios" style="padding:56px 0 0"><div class="priv rv"><div><span class="eyebrow"><b></b>iPhone</span><h2>Use Vesta on your <span class="serif">iPhone</span> for free.</h2></div>
 <div><p style="color:var(--mu);margin:0 0 16px">There is no App Store app. Install Vesta as a web app from Safari and connect it to Vesta Agent running on your Windows PC (on the same Wi-Fi or through Tailscale). You get chat, voice and notifications. Phone control is not available on iPhone.</p>
 <div style="color:var(--mu);margin:0 0 18px;line-height:1.7"><p style="margin:0 0 8px"><b style="color:var(--fg,#fff)">1.</b> On your PC, open Vesta Agent &gt; Settings &gt; Phone connection and note the address (or scan the QR code).</p><p style="margin:0 0 8px"><b style="color:var(--fg,#fff)">2.</b> On the iPhone, open Safari and go to that address (it must use https when you are away from home, for example through Tailscale).</p><p style="margin:0 0 8px"><b style="color:var(--fg,#fff)">3.</b> Tap the Share button, then <b>Add to Home Screen</b>, then <b>Add</b>.</p><p style="margin:0 0 8px"><b style="color:var(--fg,#fff)">4.</b> Open the new icon and finish setup. Chat, voice and notifications work; the agent still uses tools on your PC.</p></div>
@@ -130,7 +143,7 @@ html=f'''<!doctype html>
 <section id="support"><div class="wrap"><div class="priv rv"><div><span class="eyebrow"><b></b>Support</span><h2>Need a hand? <span class="serif">Just ask.</span></h2></div>
 <div><p style="color:var(--mu);margin:0 0 22px">Report a bug, ask a question or send a suggestion to our Telegram support bot. Screenshots, files and voice messages are welcome. You get a ticket number, and we reply right in the chat.</p><a class="btn" href="{SUP}" rel="noopener">{TG}<span>Support on Telegram</span></a></div></div></div></section>
 <section id="privacy"><div class="wrap"><div class="priv rv"><div><span class="eyebrow"><b></b>Privacy</span><h2>Your data <span class="serif">never</span> leaves home.</h2></div>
-<ul><li>No Vesta chat servers and no online database of your conversations. Chats, memory and settings live on your device. Optional anonymous usage stats can be turned off.</li><li>API keys are encrypted locally. Passwords, keys and card details are never saved to memory.</li><li>Only the message you send goes to the AI provider whose key you added. With Ollama, nothing leaves at all.</li><li>A visible indicator is always on while the microphone or screen sharing is active.</li></ul></div></div></section>
+<ul><li>No Vesta chat servers and no online database of your conversations. Chats, memory and settings live on your device. Optional anonymous usage stats (version, OS, language, country, device type and time in the app) can be turned off, and then nothing is sent.</li><li>Occasional sponsored cards come from a signed feed and never see your chats. Hide any card for 7 days with one tap.</li><li>API keys are encrypted locally. Passwords, keys and card details are never saved to memory.</li><li>Only the message you send goes to the AI provider whose key you added. With Ollama, nothing leaves at all.</li><li>A visible indicator is always on while the microphone or screen sharing is active.</li></ul></div></div></section>
 <section class="final"><div class="wrap rv"><h2>Meet your <span class="serif">new agent.</span></h2><a class="btn dlbtn" href="#download">{DL}<span>Download <span class="os"></span></span></a></div></section>
 </main>
 <footer><div class="wrap"><span>Made by Persian Studio &middot; &copy; 2026</span><span style="display:inline-flex;gap:22px;flex-wrap:wrap"><a class="ghi" href="{SUP}">{TG}Get help</a><a class="ghi" href="{RP}">{GH}GitHub</a></span></div></footer>
@@ -149,7 +162,7 @@ html=html.replace('<link rel="icon" type="image/png" href="/assets/favicon-32.pn
 html=html.replace('<!-- google-site-verification: paste the Google Search Console meta tag here, e.g. <meta name="google-site-verification" content="XXXX"> -->\n','')
 PAGES=[('features','Features','Vesta Agent Features - Voice, Screen Vision, Phone Control','Vesta Agent features: voice calls, screen vision, Android phone control, multi-agent group chat, local memory, multi-key failover, Telegram, proxy for Iran and offline mode with Ollama.'),
 ('screenshots','Screenshots','Vesta Agent Screenshots - Desktop and Android','Real screenshots of Vesta Agent on desktop and Android: chat, group chat, tools, screen sharing, voice call, agent store, Telegram and proxy settings.','gallery'),
-('download','Download','Download Vesta Agent 1.6.1 for Windows, Android and Linux','Download Vesta Agent free for Windows 10/11, Windows 7/8, Android (APK) and Linux (.deb and AppImage), with step-by-step install instructions. Free iPhone web app included.'),
+('download','Download','Download Vesta Agent 1.7.0 for Windows, Android and Linux','Download Vesta Agent free for Windows 10/11, Windows 7/8, Android (APK) and Linux (.deb and AppImage), with step-by-step install instructions. Free iPhone web app included.'),
 ('faq','FAQ','Vesta Agent FAQ - Common Questions','Answers to common questions about Vesta Agent: price, data storage, using it in Iran, supported AI models, updates and the Windows SmartScreen warning.'),
 ('support','Support','Vesta Agent Support - Get Help on Telegram','Get help with Vesta Agent: report a bug, ask a question or send a suggestion to the official Telegram support bot @VestaAgentSupportBot.'),
 ('privacy','Privacy','Vesta Agent Privacy - Your Data Stays on Your Device','How Vesta Agent keeps your data private: no Vesta servers, no online database, locally encrypted API keys and memory stored only on your device.')]
