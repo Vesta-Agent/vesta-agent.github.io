@@ -89,3 +89,6 @@ footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mu);font-size
 nav ul+.ghl{margin-inline-start:4px}@media(max-width:640px){.ghl{margin-inline-start:auto}nav .pill{margin-inline-start:0}}
 .ghi{display:inline-flex;align-items:center;gap:7px;color:var(--mu)}.ghi:hover{color:var(--tx)}.ghi svg{width:16px;height:16px}
 h1.h2{font-size:clamp(32px,5vw,58px);line-height:1.04;letter-spacing:-.03em;font-weight:600;margin:18px 0 0}
+#watch{padding-top:40px}.promo{position:relative;aspect-ratio:16/9;max-width:1100px;margin:auto;border-radius:22px;overflow:hidden;background:#05060c;border:1px solid var(--line);box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 90px rgba(90,100,255,.16)}
+.promo video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#05060c}
+@media(max-width:640px){#watch{padding-top:24px}.promo{aspect-ratio:9/16;max-width:min(420px,100%);border-radius:18px}}

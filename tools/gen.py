@@ -85,6 +85,16 @@ imgs=''.join(f'<img {"src" if i==0 else "data-src"}="assets/shots/{k}.webp" alt=
 phones=''.join(f'<figure class="phone rv"><div class="s"><img src="assets/shots/{k}.webp" alt="Vesta Agent on Android: {n}" width="412" height="915" fetchpriority="low" decoding="async"></div><p>{n}</p></figure>' for k,n in PH)
 plats=''.join(f'<article class="plat rv{" rec" if k=="win" else ""}"><h3>{h}</h3><small>{s}</small><ol>{"".join("<li>"+x+"</li>" for x in st)}</ol>{('<a class="get" href="#ios">How to install</a>' if k=="ios" else '<a class="get" data-asset="'+k+'" href="https://github.com/Vesta-Agent/vesta-agent-releases/releases/latest" rel="nofollow">Download</a>')}</article>' for k,h,s,st in P)
 faq=''.join(f'<details class="rv"><summary>{q}</summary><p>{a}</p></details>' for q,a in Q)
+# ---------- promo video (home page, right after the hero) ----------
+VID='/assets/video/'
+VLANG=[('en','English'),('fa','فارسی'),('ar','العربية'),('de','Deutsch'),('es','Español'),('fr','Français'),('hi','हिन्दी'),('ru','Русский'),('tr','Türkçe'),('zh','中文')]
+vtracks=''.join(f'<track kind="subtitles" srclang="{k}" label="{n}" src="{VID}subs/vesta-promo.{k}.vtt">' for k,n in VLANG)
+watch=(f'<section id="watch"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Watch</span><h2>Vesta in <span class="serif">30 seconds.</span></h2>'
+ '<p>Floating island, background tasks, apps and files, voice calls, themes and free models. Captions in 10 languages.</p></div>'
+ f'<div class="promo rv"><video id="pv" muted loop playsinline controls preload="none" width="1920" height="1080" poster="{VID}vesta-promo-h.webp" '
+ f'data-h="{VID}vesta-promo-h" data-v="{VID}vesta-promo-v" aria-label="Vesta Agent promo video, 33 seconds">{vtracks}</video>'
+ f'<noscript><video muted loop playsinline controls preload="none" poster="{VID}vesta-promo-h.webp" src="{VID}vesta-promo-h.mp4"></video></noscript></div></div></section>')
+VLD={"@type":"VideoObject","@id":S+"#promo","name":"Vesta Agent in 30 seconds","description":"A short tour of Vesta Agent: the floating island, background tasks while you keep chatting, apps and files built by the agent, live voice calls, 15 themes, 10 languages and free AI models.","thumbnailUrl":[S+"assets/video/vesta-promo-h.jpg",S+"assets/video/vesta-promo-v.jpg"],"uploadDate":"2026-10-16","duration":"PT33S","contentUrl":S+"assets/video/vesta-promo-h.mp4","embedUrl":S,"inLanguage":"fa","publisher":{"@id":S+"#org"}}
 html=f'''<!doctype html>
 <html lang="en">
 <head>
@@ -128,6 +138,7 @@ html=f'''<!doctype html>
 <span class="ver">Free for Windows, Android, Linux and iPhone &middot; Version <span data-ver>1.7.0</span></span>
 </div><span class="scroll" aria-hidden="true"></span>
 </header>
+{watch}
 <section id="features"><div class="wrap"><div class="head rv"><span class="eyebrow"><b></b>Capabilities</span><h2>Everything an assistant <span class="serif">should</span> do.</h2><p>One app, powerful agents, and no servers of ours in between.</p></div><div class="bento">{tiles}</div></div></section>
 <section id="gallery"><div class="wrap"><div class="head c rv"><span class="eyebrow"><b></b>Inside the app</span><h2>Designed to feel <span class="serif">calm.</span></h2><p>Real screens from Vesta Agent, shown with demo content.</p></div>
 <div class="gallery rv"><div class="tabs" role="tablist" aria-label="Screens">{tabs}</div><div><div class="frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="scr">{imgs}</div></div><p class="cap" id="cap" aria-live="polite">{G[0][3]}</p></div></div>
@@ -177,7 +188,7 @@ html=html.replace('<footer><div class="wrap">','<footer><div class="wrap" style=
 SHOTS=[(S+f'assets/shots/{k}.webp',c) for k,a,b,c in G]+[(S+f'assets/shots/{k}.webp','Vesta Agent on Android: '+n) for k,n in PH]
 ld.update({"screenshot":[u for u,_ in SHOTS],"publisher":{"@id":S+"#org"},"@id":S+"#app"}); ld.pop("@context",None)
 graph={"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":S+"#org","name":"Persian Studio","url":S,"logo":{"@type":"ImageObject","url":S+"assets/logo-512.png","width":512,"height":512},"sameAs":[RP,SUP]},
- {"@type":"WebSite","@id":S+"#website","name":"Vesta Agent","alternateName":"Vesta Agent by Persian Studio","url":S,"publisher":{"@id":S+"#org"},"inLanguage":"en"},ld]}
+ {"@type":"WebSite","@id":S+"#website","name":"Vesta Agent","alternateName":"Vesta Agent by Persian Studio","url":S,"publisher":{"@id":S+"#org"},"inLanguage":"en"},ld,VLD]}
 html=re.sub(r'<script type="application/ld\+json">.*?</script>', lambda m:'<script type="application/ld+json">'+json.dumps(graph)+'</script>', html, count=1, flags=re.S)
 open('index.html','w').write(html)
 head_end=html.index('</head>'); body_start=html.index('<main>'); main_end=html.index('</main>')
