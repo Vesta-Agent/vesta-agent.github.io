@@ -1,0 +1,222 @@
+html
+Vesta Agent - 适用于 Windows、Android 和 Linux 的个人 AI 助手
+Vesta Agent
+功能
+截图
+下载
+常见问题
+支持
+隐私
+获取应用
+个人 AI 助手 · v
+为你工作。
+你自己的 AI 智能体：会说话、能看屏幕、能操控手机，把事情办好。一切都留在你的设备上。
+观看演示
+免费支持 Windows、Android、Linux 和 iPhone · 版本
+观看
+30 秒了解
+Vesta。
+悬浮岛、后台任务、应用与文件、语音通话、主题和免费模型。支持 10 种语言字幕。
+能力
+助手
+应该
+做的一切。
+一个应用，强大的智能体，中间没有我们的服务器。
+聊天时继续工作
+长任务在后台运行，并显示实时状态卡。继续聊天、询问进度、修改计划或取消，任务不会中断。
+手机控制
+智能体可在 Android 上点按、输入和导航，无需电脑。
+语音通话
+自然地说话，听到语音回复。通话中共享屏幕，问它哪里出了问题。
+屏幕视觉
+经你允许，智能体可以看到屏幕、讲解内容并帮你修复。
+多智能体群聊
+把专业智能体放进同一个房间，让它们分工协作。
+本地存储的记忆
+只存在于你设备上的智能记忆。随时查看、编辑或清除。
+Telegram
+连接你自己的机器人或个人账号，并定时发送消息。
+多密钥自动切换
+每个智能体可添加多个 API 密钥。一个用完后，下一个接着完成同一任务。
+伊朗专用代理
+按服务设置真正的 HTTP 和 SOCKS5 代理，内置分步指南。
+离线模式
+借助 Ollama 完全在你的电脑上运行。数据不出本机。
+隐私优先
+无需账号，没有云端数据库。密钥在你的设备上加密。
+悬浮岛
+始终置顶的小胶囊：随时随地查看进度、审批和快速聊天。
+15 种主题
+午夜、极光、海洋、AMOLED 纯黑、纸张等，平滑过渡切换。每个智能体都有自己的形状和颜色。
+智能体生成的文件
+智能体可生成 PDF、Word、Excel、ZIP 和媒体文件，带预览，运行程序前有安全提示。
+NVIDIA NIM 及更多模型
+Gemini、OpenAI、Anthropic、xAI、OpenRouter、DeepSeek、Groq、Mistral、NVIDIA NIM 和本地模型，模型列表可搜索。
+准时触发的提醒
+定时任务和提醒即使在应用关闭时也会运行，支持 Windows 和 Android。
+10 种语言
+默认英语。随时切换，整个应用立即更新，包括从右到左的波斯语和阿拉伯语。
+为你开发应用
+在 Windows 上，智能体可以编写小程序并打包为 .exe、Android .apk（需安装 Android SDK）或可安装的网页应用，并附带图标。
+沉静现代的设计
+玻璃质感界面、柔和的动效与音效、动画锁屏和更新窗口，以及适用于旧电脑和旧手机的“减少动画”模式。
+应用内部
+设计得让人感到
+平静。
+Vesta Agent 的真实界面，使用演示内容。
+后台任务
+边工作边聊天
+主题
+15 种配色主题
+模型
+NVIDIA NIM 及更多
+聊天
+真正的助手，而不只是聊天机器人
+群聊
+协同工作的智能体
+工具
+在你的电脑上执行命令
+屏幕共享
+智能体看到你所看到的
+语音通话
+免提对话
+智能体
+即用型专家
+机器人或个人账号
+代理
+在服务被封锁的地方也能用
+任务在后台运行时 Vesta Agent 仍在回复
+后台任务
+免费。选择你的
+平台。
+最新版本：v
+。一分钟内完成安装。
+Windows 10 / 11
+64 位安装程序
+运行安装程序。
+如果出现 SmartScreen，点击 More info，然后点击 Run anyway。
+从开始菜单打开 Vesta Agent。
+Windows 7 / 8
+适用于旧电脑的版本
+如有警告，点击 More info，然后点击 Run anyway。
+Android
+适用于手机和平板的 APK
+在手机上下载 APK。
+出现提示时，允许从此来源安装。
+打开应用并按引导完成设置。
+iPhone / iPad
+来自 Safari 的免费网页应用
+在 Safari 中打开你的 Vesta 地址。
+点按“分享”，然后点按“添加到主屏幕”。
+与电脑上的 Vesta 进行聊天、语音和通知。
+如何安装
+Linux .deb
+Ubuntu、Debian、Mint
+下载 .deb 文件。
+运行
+从应用程序中启动它。
+Linux AppImage
+任意发行版
+下载 AppImage。
+双击即可启动。
+1.7 新功能：
+任务在后台运行时可继续聊天，并在聊天中引导或取消任务；15 种主题；NVIDIA NIM 与可搜索的模型列表；智能体开发的应用（.exe、.apk、网页应用）；情境建议；动画锁屏和更新窗口；轻松打开、保存和分享文件；自动聊天标题；以及“减少动画”模式。
+1.6 新功能：
+全新现代设计，带动画和音效；悬浮岛和快速启动快捷键；智能体可生成并发送任何文件（PDF、Word、Excel、ZIP、媒体，以及带安全提示的安装程序）；应用关闭时也能触发的提醒；修复语音；默认英语并可在 10 种语言间即时切换；以及免费的 iPhone 网页应用。Linux 暂时保持在 1.4.1。
+更新说明
+iPhone
+在你的
+上免费使用 Vesta。
+App Store 中没有应用。从 Safari 将 Vesta 安装为网页应用，并连接到你 Windows 电脑上的 Vesta Agent（同一 Wi-Fi 或通过 Tailscale）。你可以使用聊天、语音和通知。iPhone 不支持手机控制。
+在电脑上打开 Vesta Agent > Settings > Phone connection，记下地址（或扫描二维码）。
+在 iPhone 上打开 Safari 并访问该地址（不在家时必须使用 https，例如通过 Tailscale）。
+点按“分享”按钮，然后点按
+添加到主屏幕
+，再点按
+添加
+打开新图标并完成设置。聊天、语音和通知均可使用；智能体仍使用你电脑上的工具。
+提示：同一地址也可在任意浏览器中作为书签使用。
+所有版本和 SHA256 校验和
+在 GitHub 上查看
+问题，
+解答。
+如何获取帮助或报告问题？
+在 Telegram 上联系我们的支持机器人 @VestaAgentSupportBot。发送描述、截图或语音消息，你会收到一个工单号。回复会出现在同一个聊天中。
+Vesta Agent 免费吗？
+是的。Windows 和 Android 应用免费，免费的 iPhone 网页应用可连接到你电脑上的 Vesta。你使用自己的 AI 密钥，例如免费的 Gemini 或 OpenRouter 密钥，也可以用 Ollama 离线运行模型。
+我的数据存储在哪里？
+只在你自己的设备上：聊天、记忆、智能体、设置和加密的密钥。没有 Vesta 聊天服务器。可选的匿名使用统计（随机安装 ID、版本、系统、语言、国家/地区、设备类型和使用时长）可在设置中关闭。
+在伊朗能用吗？
+能。在设置中添加代理，例如 v2rayN 或 NekoBox 的本地端口，并选择哪些服务使用它。内置指南会展示每一步。
+支持哪些 AI 模型？
+Gemini、OpenAI、Anthropic、xAI (Grok)、OpenRouter、DeepSeek、Groq、Mistral、Together、NVIDIA NIM、任何兼容 OpenAI 的服务商，以及通过 Ollama 或 LM Studio 运行的本地模型。
+会自动更新吗？
+会。它在启动时静默检查，只有在有新版本时才弹出窗口，然后为你下载、校验并安装。
+智能体工作时我还能继续聊天吗？
+可以。从 1.7 开始，长任务在其聊天的后台运行。询问进度、添加或修改指示，或取消任务，工作都不会停止。
+Vesta Agent 是谁开发的？
+Persian Studio，由 SOBi 和 Mahan 创立。
+为什么 Windows 显示蓝色警告？
+安装程序尚未使用付费证书签名。点击 More info，然后点击 Run anyway。
+需要帮助？
+尽管问。
+向我们的 Telegram 支持机器人报告问题、提问或提出建议。欢迎发送截图、文件和语音消息。你会收到工单号，我们会直接在聊天中回复。
+Telegram 支持
+你的数据
+从不
+离开家。
+没有 Vesta 聊天服务器，也没有存放你对话的在线数据库。聊天、记忆和设置都保存在你的设备上。可选的匿名使用统计（版本、系统、语言、国家/地区、设备类型和使用时长）可以关闭，关闭后不发送任何内容。
+偶尔出现的赞助卡片来自签名订阅源，绝不会看到你的聊天。轻点一下即可将任意卡片隐藏 7 天。
+API 密钥在本地加密。密码、密钥和银行卡信息绝不会保存到记忆中。
+只有你发送的消息会发往你添加了密钥的 AI 服务商。使用 Ollama 时，什么都不会离开。
+麦克风或屏幕共享开启时，始终显示可见的指示标志。
+认识你的
+新智能体。
+由 Persian Studio 制作 · © 2026
+获取帮助
+GitHub
+主导航
+GitHub 上的 Vesta Agent
+Vesta Agent 标志
+Vesta Agent 宣传视频，33 秒
+任务在后台运行时 Vesta Agent 回答问题
+Vesta Agent 语音通话界面
+智能体查看屏幕时的 Vesta Agent 聊天
+Vesta Agent API 密钥设置
+Vesta Agent 设置中的主题库
+Vesta Agent 中可搜索的 NVIDIA NIM 模型列表
+界面
+包含 15 种主题的主题库
+包含 NVIDIA NIM 模型的可搜索模型列表
+带每周计划的 Vesta Agent 聊天
+研究员、服务器运维和写手分工完成任务的群聊
+智能体运行工具并报告结果
+聊天时的屏幕共享指示标志
+语音通话界面
+提供即用型智能体的智能体商店
+Telegram 设置
+按服务路由的代理设置
+Android 上的 Vesta Agent：后台任务
+Android 上的 Vesta Agent：主题
+Android 上的 Vesta Agent：模型
+Android 上的 Vesta Agent：聊天
+页脚
+Vesta Agent 是一款免费的个人 AI 助手，支持 Windows、Android 和 Linux，具备语音通话、屏幕视觉、手机控制、可在聊天中引导的后台任务、多智能体群聊、NVIDIA NIM 及众多其他模型、15 种主题，以及保存在你设备上的记忆。
+下载适用于 Windows、Android 和 Linux 的 Vesta Agent 1.7.0
+› 下载
+免费下载适用于 Windows 10/11、Windows 7/8、Android (APK) 和 Linux（.deb 和 AppImage）的 Vesta Agent，附分步安装说明。含免费 iPhone 网页应用。
+Vesta Agent 常见问题
+› 常见问题
+关于 Vesta Agent 常见问题的解答：价格、数据存储、在伊朗使用、支持的 AI 模型、更新以及 Windows SmartScreen 警告。
+Vesta Agent 功能 - 语音、屏幕视觉、手机控制
+› 功能
+Vesta Agent 功能：语音通话、屏幕视觉、Android 手机控制、多智能体群聊、本地记忆、多密钥切换、Telegram、伊朗专用代理，以及使用 Ollama 的离线模式。
+Vesta Agent 隐私 - 你的数据留在你的设备上
+› 隐私
+Vesta Agent 如何保护你的数据隐私：没有 Vesta 服务器，没有在线数据库，API 密钥在本地加密，记忆只存储在你的设备上。
+Vesta Agent 截图 - 桌面版和 Android
+› 截图
+Vesta Agent 在桌面和 Android 上的真实截图：聊天、群聊、工具、屏幕共享、语音通话、智能体商店、Telegram 和代理设置。
+Vesta Agent 支持 - 在 Telegram 获取帮助
+› 支持
+获取 Vesta Agent 帮助：向官方 Telegram 支持机器人 @VestaAgentSupportBot 报告问题、提问或提出建议。
