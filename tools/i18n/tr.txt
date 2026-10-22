@@ -119,10 +119,10 @@ Linux AppImage
 Her dağıtım
 AppImage'ı indir.
 Başlatmak için çift tıkla.
+1.8'de yeni:
+her uygulamanın üzerinde yüzen panel, eller serbest arama modu ve “Hey Vesta”, telefonun varsayılan asistanı olarak Vesta, internet veya VPN çalışmadığında yerleşik bağlantı, elle model seçimi, uygulama içi eğitim videosu, sohbette fotoğraf, video ve dosya gönderme, token ve anahtarlar için güvenli form, tek dokunuşla hesap bağlama, video yapımı (Shotcut gibi düzenleyicilerin içinde de), referans sitelerden web tasarımı, sahibin öğrettiği dersler ve sağdan sola PIN kilidi. Linux şimdilik 1.4.1’de kalıyor.
 1.7'de yeni:
 bir görev arka planda çalışırken sohbete devam et ve onu sohbetten yönlendir ya da iptal et, 15 tema, aranabilir model listesiyle NVIDIA NIM, ajanın yaptığı uygulamalar (.exe, .apk, web uygulaması), bağlama duyarlı öneriler, hareketli kilit ekranı ve güncelleme penceresi, dosyalar için basit Aç, Kaydet ve Paylaş, otomatik sohbet başlıkları ve Animasyonları azalt modu.
-1.6'da yeni:
-animasyon ve seslerle modern yeniden tasarım, yüzen ada ve açma kısayolu, her dosyayı oluşturup gönderen ajanlar (PDF, Word, Excel, ZIP, medya ve güvenlik uyarılı yükleyiciler), uygulama kapalıyken çalışan hatırlatıcılar, düzeltilmiş ses, 10 dilde anında dil değiştirmeyle varsayılan İngilizce ve ücretsiz iPhone web uygulaması. Linux şimdilik 1.4.1'de kalıyor.
 Sürüm notları
 iPhone
 Vesta'yı
@@ -202,7 +202,7 @@ Android'de Vesta Agent: Modeller
 Android'de Vesta Agent: Sohbet
 Alt bilgi
 Vesta Agent; sesli aramalar, ekran görme, telefon kontrolü, sohbetten yönetebildiğin arka plan görevleri, çok ajanlı grup sohbeti, NVIDIA NIM ve birçok başka model, 15 tema ve cihazında kalan hafızayla Windows, Android ve Linux için ücretsiz kişisel yapay zekâ asistanıdır.
-Vesta Agent 1.7.0'ı Windows, Android ve Linux için indir
+Vesta Agent 1.8.0'ı Windows, Android ve Linux için indir
 › İndir
 Vesta Agent'ı Windows 10/11, Windows 7/8, Android (APK) ve Linux (.deb ve AppImage) için adım adım kurulum talimatlarıyla ücretsiz indir. Ücretsiz iPhone web uygulaması dahil.
 Vesta Agent SSS - Sık sorulan sorular

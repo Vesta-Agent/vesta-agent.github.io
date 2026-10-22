@@ -119,10 +119,10 @@ Linux AppImage
 任意发行版
 下载 AppImage。
 双击即可启动。
+1.8 新功能：
+可悬浮在任何应用之上的浮动面板、免提通话模式和“Hey Vesta”、将 Vesta 设为手机默认助手、网络或 VPN 失效时的内置连接、手动选择模型、应用内教程视频、在聊天中发送照片、视频和文件、用于令牌和密钥的安全表单、一键连接账号、制作视频（也可在 Shotcut 等编辑器中）、参考网站的网页设计、所有者传授的课程，以及从右到左的 PIN 锁。Linux 目前仍为 1.4.1。
 1.7 新功能：
 任务在后台运行时可继续聊天，并在聊天中引导或取消任务；15 种主题；NVIDIA NIM 与可搜索的模型列表；智能体开发的应用（.exe、.apk、网页应用）；情境建议；动画锁屏和更新窗口；轻松打开、保存和分享文件；自动聊天标题；以及“减少动画”模式。
-1.6 新功能：
-全新现代设计，带动画和音效；悬浮岛和快速启动快捷键；智能体可生成并发送任何文件（PDF、Word、Excel、ZIP、媒体，以及带安全提示的安装程序）；应用关闭时也能触发的提醒；修复语音；默认英语并可在 10 种语言间即时切换；以及免费的 iPhone 网页应用。Linux 暂时保持在 1.4.1。
 更新说明
 iPhone
 在你的
@@ -202,7 +202,7 @@ Android 上的 Vesta Agent：模型
 Android 上的 Vesta Agent：聊天
 页脚
 Vesta Agent 是一款免费的个人 AI 助手，支持 Windows、Android 和 Linux，具备语音通话、屏幕视觉、手机控制、可在聊天中引导的后台任务、多智能体群聊、NVIDIA NIM 及众多其他模型、15 种主题，以及保存在你设备上的记忆。
-下载适用于 Windows、Android 和 Linux 的 Vesta Agent 1.7.0
+下载适用于 Windows、Android 和 Linux 的 Vesta Agent 1.8.0
 › 下载
 免费下载适用于 Windows 10/11、Windows 7/8、Android (APK) 和 Linux（.deb 和 AppImage）的 Vesta Agent，附分步安装说明。含免费 iPhone 网页应用。
 Vesta Agent 常见问题

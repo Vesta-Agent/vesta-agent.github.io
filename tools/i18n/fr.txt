@@ -119,10 +119,10 @@ Linux AppImage
 Toute distribution
 Télécharge l'AppImage.
 Double-clique pour démarrer.
+Nouveau dans 1.8 :
+un panneau flottant au-dessus de n’importe quelle app, un mode appel mains libres et « Hey Vesta », Vesta comme assistant par défaut du téléphone, une connexion intégrée quand Internet ou votre VPN ne marche pas, le choix manuel du modèle, une vidéo tutoriel dans l’app, l’envoi de photos, vidéos et fichiers dans le chat, un formulaire sécurisé pour les jetons et clés, la connexion des comptes en un geste, la création de vidéos (aussi dans des éditeurs comme Shotcut), la conception de sites à partir de références, des leçons apprises par le propriétaire et un verrouillage PIN de droite à gauche. Linux reste en 1.4.1 pour l’instant.
 Nouveau dans 1.7 :
 continue à discuter pendant qu'une tâche tourne en arrière-plan et pilote-la ou annule-la depuis la discussion, 15 thèmes, NVIDIA NIM avec une liste de modèles consultable, apps créées par l'agent (.exe, .apk, web app), suggestions selon le contexte, écran de verrouillage et fenêtre de mise à jour animés, ouverture, enregistrement et partage simples des fichiers, titres de discussion automatiques et un mode Réduire les animations.
-Nouveau dans 1.6 :
-une refonte moderne avec animations et sons, une île flottante et un raccourci d'ouverture, des agents qui créent et envoient n'importe quel fichier (PDF, Word, Excel, ZIP, médias et installateurs avec avertissement de sécurité), des rappels qui se déclenchent app fermée, la voix corrigée, l'anglais par défaut avec changement instantané parmi 10 langues, et une web app iPhone gratuite. Linux reste en 1.4.1 pour l'instant.
 Notes de version
 iPhone
 Utilise Vesta sur ton
@@ -202,7 +202,7 @@ Vesta Agent sur Android : modèles
 Vesta Agent sur Android : discussion
 Pied de page
 Vesta Agent est un assistant IA personnel gratuit pour Windows, Android et Linux avec appels vocaux, vision de l'écran, contrôle du téléphone, tâches en arrière-plan pilotables depuis la discussion, discussion de groupe multi-agents, NVIDIA NIM et de nombreux autres modèles, 15 thèmes et une mémoire qui reste sur ton appareil.
-Télécharger Vesta Agent 1.7.0 pour Windows, Android et Linux
+Télécharger Vesta Agent 1.8.0 pour Windows, Android et Linux
 › Télécharger
 Télécharge Vesta Agent gratuitement pour Windows 10/11, Windows 7/8, Android (APK) et Linux (.deb et AppImage), avec des instructions d'installation pas à pas. Web app iPhone gratuite incluse.
 FAQ Vesta Agent - Questions fréquentes
