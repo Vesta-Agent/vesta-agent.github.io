@@ -1,0 +1,222 @@
+html
+Vesta Agent - Windows, Android ve Linux için kişisel yapay zekâ asistanı
+Vesta Agent
+Özellikler
+Ekran görüntüleri
+İndir
+SSS
+Destek
+Gizlilik
+Uygulamayı edin
+Kişisel yapay zekâ asistanı · v
+senin için çalışır.
+Konuşan, ekranını gören, telefonunu yöneten ve işleri bitiren kendi yapay zekâ ajanın. Her şey cihazında kalır.
+İş başında gör
+Windows, Android, Linux ve iPhone için ücretsiz · Sürüm
+İzle
+30 saniyede
+Vesta.
+Yüzen ada, arka plan görevleri, uygulamalar ve dosyalar, sesli aramalar, temalar ve ücretsiz modeller. 10 dilde altyazı.
+Yetenekler
+Bir asistanın
+yapması gereken
+her şey.
+Tek uygulama, güçlü ajanlar ve arada bizim hiçbir sunucumuz yok.
+Sen sohbet ederken çalışmaya devam eder
+Uzun görevler canlı bir durum kartıyla arka planda çalışır. Sohbete devam et, nasıl gittiğini sor, planı değiştir ya da iptal et; görev sürer.
+Telefon kontrolü
+Ajan, bilgisayar olmadan bile Android'de dokunur, yazar ve gezinir.
+Sesli aramalar
+Doğal konuş ve sesli yanıtları dinle. Arama sırasında ekranını paylaş ve sorunun ne olduğunu sor.
+Ekran görme
+İzninle ajan ekranını görür, açıklar ve düzeltmene yardım eder.
+Çok ajanlı grup sohbeti
+Uzman ajanları bir odaya koy, işi aralarında bölüşsünler.
+Yerelde saklanan hafıza
+Yalnızca cihazında yaşayan akıllı hafıza. İstediğin zaman görüntüle, düzenle veya sil.
+Telegram
+Kendi botunu ya da kişisel hesabını bağla ve mesaj zamanla.
+Çoklu anahtar yedekleme
+Her ajana birkaç API anahtarı ekle. Biri bitince sıradaki aynı görevi sürdürür.
+İran için proxy
+Her hizmet için gerçek HTTP ve SOCKS5 proxy, yerleşik adım adım rehberle.
+Çevrimdışı mod
+Ollama ile tamamen kendi bilgisayarında çalıştır. Hiçbir şey makineden çıkmaz.
+Önce gizlilik
+Hesap yok, bulut veritabanı yok. Anahtarlar cihazında şifrelenir.
+Yüzen ada
+Hep üstte duran küçük bir hap: ilerleme, onaylar ve her yerden hızlı sohbet.
+15 tema
+Gece Yarısı, Aurora, Okyanus, AMOLED siyah, Kâğıt ve daha fazlası, yumuşak bir geçişle. Her ajanın kendi şekli ve rengi var.
+Ajanlardan dosyalar
+Ajanlar PDF, Word, Excel, ZIP ve medya oluşturur; önizleme ve programlardan önce güvenlik uyarısıyla.
+NVIDIA NIM ve daha fazla model
+Gemini, OpenAI, Anthropic, xAI, OpenRouter, DeepSeek, Groq, Mistral, NVIDIA NIM ve yerel modeller, aranabilir model listesiyle.
+Gerçekten çalışan hatırlatıcılar
+Zamanlanmış görevler ve hatırlatıcılar uygulama kapalıyken bile Windows ve Android'de çalışır.
+10 dil
+Varsayılan İngilizce. İstediğin an değiştir, tüm uygulama birden güncellenir; Farsça ve Arapça sağdan sola dahil.
+Senin için uygulama yapar
+Windows'ta ajan küçük bir program yazıp onu .exe, Android .apk (Android SDK kuruluysa) ya da kurulabilir web uygulaması olarak, simgesiyle birlikte paketleyebilir.
+Sakin, modern bir tasarım
+Cam yüzeyler, yumuşak hareket ve sesler, hareketli kilit ekranı ve güncelleme penceresi, eski bilgisayar ve telefonlar için Animasyonları azalt modu.
+Uygulamanın içi
+Hissettirmek için tasarlandı:
+sakinlik.
+Vesta Agent'tan demo içerikli gerçek ekranlar.
+Arka plan görevleri
+O çalışırken sohbet et
+Temalar
+15 renk teması
+Modeller
+NVIDIA NIM ve fazlası
+Sohbet
+Sohbet botu değil, gerçek bir asistan
+Grup sohbeti
+Birlikte çalışan ajanlar
+Araçlar
+Makinende komut çalıştırır
+Ekran paylaşımı
+Ajan senin gördüğünü görür
+Sesli arama
+Eller serbest konuşma
+Ajanlar
+Hazır uzmanlar
+Bot veya kişisel hesap
+Proxy
+Hizmetlerin engellendiği yerde çalışır
+Vesta Agent arka planda bir görev çalışırken yanıt veriyor
+Arka plan görevi
+Ücretsiz. Platformunu
+seç.
+Son sürüm: v
+. Bir dakikadan kısa sürede kurulur.
+Windows 10 / 11
+64 bit yükleyici
+Yükleyiciyi çalıştır.
+SmartScreen çıkarsa More info, ardından Run anyway'e tıkla.
+Vesta Agent'ı Başlat menüsünden aç.
+Windows 7 / 8
+Eski bilgisayarlar için sürüm
+Uyarı çıkarsa More info, ardından Run anyway'e tıkla.
+Android
+Telefon ve tabletler için APK
+APK'yı telefonuna indir.
+Sorulduğunda bu kaynaktan kuruluma izin ver.
+Uygulamayı aç ve kurulumu takip et.
+iPhone / iPad
+Safari'den ücretsiz web uygulaması
+Vesta adresini Safari'de aç.
+Paylaş'a, ardından Ana Ekrana Ekle'ye dokun.
+Bilgisayarındaki Vesta ile sohbet, ses ve bildirimler.
+Nasıl kurulur
+Linux .deb
+Ubuntu, Debian, Mint
+.deb dosyasını indir.
+Çalıştır
+Uygulamalarından başlat.
+Linux AppImage
+Her dağıtım
+AppImage'ı indir.
+Başlatmak için çift tıkla.
+1.8'de yeni:
+her uygulamanın üzerinde yüzen panel, eller serbest arama modu ve “Hey Vesta”, telefonun varsayılan asistanı olarak Vesta, internet veya VPN çalışmadığında yerleşik bağlantı, elle model seçimi, uygulama içi eğitim videosu, sohbette fotoğraf, video ve dosya gönderme, token ve anahtarlar için güvenli form, tek dokunuşla hesap bağlama, video yapımı (Shotcut gibi düzenleyicilerin içinde de), referans sitelerden web tasarımı, sahibin öğrettiği dersler ve sağdan sola PIN kilidi. Linux şimdilik 1.4.1’de kalıyor.
+1.7'de yeni:
+bir görev arka planda çalışırken sohbete devam et ve onu sohbetten yönlendir ya da iptal et, 15 tema, aranabilir model listesiyle NVIDIA NIM, ajanın yaptığı uygulamalar (.exe, .apk, web uygulaması), bağlama duyarlı öneriler, hareketli kilit ekranı ve güncelleme penceresi, dosyalar için basit Aç, Kaydet ve Paylaş, otomatik sohbet başlıkları ve Animasyonları azalt modu.
+Sürüm notları
+iPhone
+Vesta'yı
+ücretsiz kullan.
+App Store uygulaması yok. Vesta'yı Safari'den web uygulaması olarak kur ve Windows bilgisayarında çalışan Vesta Agent'a bağla (aynı Wi-Fi'de ya da Tailscale ile). Sohbet, ses ve bildirimler çalışır. iPhone'da telefon kontrolü yoktur.
+Bilgisayarında Vesta Agent > Settings > Phone connection'ı aç ve adresi not et (ya da QR kodu tara).
+iPhone'da Safari'yi aç ve o adrese git (evden uzaktayken https olmalı, örneğin Tailscale ile).
+Paylaş düğmesine, ardından
+Ana Ekrana Ekle
+, ardından
+Ekle
+Yeni simgeyi aç ve kurulumu bitir. Sohbet, ses ve bildirimler çalışır; ajan araçları yine bilgisayarında kullanır.
+İpucu: aynı adres her tarayıcıda yer imi olarak da çalışır.
+Tüm sürümler ve SHA256 sağlama toplamları
+GitHub'da görüntüle
+Sorular,
+yanıtlar.
+Nasıl yardım alırım ya da hata bildiririm?
+Telegram'daki destek botumuza yaz: @VestaAgentSupportBot. Açıklama, ekran görüntüsü veya sesli mesaj gönder, bir bilet numarası al. Yanıtlar aynı sohbete gelir.
+Vesta Agent ücretsiz mi?
+Evet. Windows ve Android uygulamaları ücretsizdir; bilgisayarındaki Vesta'ya bağlanan ücretsiz bir iPhone web uygulaması da var. Kendi yapay zekâ anahtarını kullanırsın, örneğin ücretsiz bir Gemini veya OpenRouter anahtarı, ya da modelleri Ollama ile çevrimdışı çalıştırırsın.
+Verilerim nerede saklanıyor?
+Yalnızca kendi cihazında: sohbetler, hafıza, ajanlar, ayarlar ve şifreli anahtarlar. Vesta sohbet sunucusu yoktur. İsteğe bağlı anonim kullanım istatistikleri (rastgele kurulum kimliği, sürüm, işletim sistemi, dil, ülke, cihaz türü ve uygulamada geçen süre) Ayarlar'dan kapatılabilir.
+İran'da çalışır mı?
+Evet. Ayarlar'da bir proxy ekle, örneğin v2rayN veya NekoBox yerel portu, ve hangi hizmetlerin kullanacağını seç. Yerleşik rehber her adımı gösterir.
+Hangi yapay zekâ modellerini destekler?
+Gemini, OpenAI, Anthropic, xAI (Grok), OpenRouter, DeepSeek, Groq, Mistral, Together, NVIDIA NIM, OpenAI uyumlu her sağlayıcı ve Ollama ya da LM Studio ile yerel modeller.
+Otomatik güncellenir mi?
+Evet. Açılışta sessizce kontrol eder ve yalnızca yeni sürüm varsa bir pencere gösterir; sonra senin için indirir, doğrular ve kurar.
+Ajan çalışırken sohbete devam edebilir miyim?
+Evet. 1.7'den beri uzun görevler kendi sohbetlerinin arka planında çalışır. Nasıl gittiğini sor, talimat ekle ya da değiştir veya iptal et; iş durmaz.
+Vesta Agent'ı kim yapıyor?
+SOBi ve Mahan tarafından kurulan Persian Studio.
+Windows neden mavi bir uyarı gösteriyor?
+Yükleyici henüz ücretli bir sertifikayla imzalanmadı. More info, ardından Run anyway'e tıkla.
+Yardım mı lazım?
+Sadece sor.
+Telegram destek botumuza hata bildir, soru sor ya da öneri gönder. Ekran görüntüleri, dosyalar ve sesli mesajlar memnuniyetle kabul edilir. Bilet numarası alırsın, yanıtı doğrudan sohbette veririz.
+Telegram'da destek
+Verilerin
+asla
+evden çıkmaz.
+Vesta sohbet sunucusu yok, konuşmalarının çevrimiçi veritabanı yok. Sohbetler, hafıza ve ayarlar cihazında durur. İsteğe bağlı anonim kullanım istatistikleri (sürüm, işletim sistemi, dil, ülke, cihaz türü ve uygulamada geçen süre) kapatılabilir; o zaman hiçbir şey gönderilmez.
+Ara sıra görünen sponsorlu kartlar imzalı bir akıştan gelir ve sohbetlerini asla görmez. Herhangi bir kartı tek dokunuşla 7 gün gizle.
+API anahtarları yerelde şifrelenir. Parolalar, anahtarlar ve kart bilgileri asla hafızaya kaydedilmez.
+Yalnızca gönderdiğin mesaj, anahtarını eklediğin yapay zekâ sağlayıcısına gider. Ollama ile hiçbir şey dışarı çıkmaz.
+Mikrofon veya ekran paylaşımı açıkken her zaman görünür bir gösterge yanar.
+Yeni ajanınla
+tanış.
+Persian Studio tarafından yapıldı · © 2026
+Yardım al
+GitHub
+Ana
+GitHub'da Vesta Agent
+Vesta Agent logosu
+Vesta Agent tanıtım videosu, 33 saniye
+Vesta Agent arka planda bir görev çalışırken bir soruyu yanıtlıyor
+Vesta Agent sesli arama ekranı
+Ajan ekranı görürken Vesta Agent sohbeti
+Vesta Agent API anahtarı ayarları
+Vesta Agent ayarlarında tema galerisi
+Vesta Agent'ta aranabilir NVIDIA NIM model listesi
+Ekranlar
+15 temalı tema galerisi
+NVIDIA NIM modelleriyle aranabilir model listesi
+Haftalık planla Vesta Agent sohbeti
+Araştırmacı, Sunucu Operasyonları ve Yazarın bir görevi bölüştüğü grup sohbeti
+Araçları çalıştırıp sonucu bildiren ajan
+Sohbet sırasında ekran paylaşımı göstergesi
+Sesli arama ekranı
+Hazır ajanlarla ajan mağazası
+Telegram ayarları
+Hizmet bazlı yönlendirmeli proxy ayarları
+Android'de Vesta Agent: Arka plan görevi
+Android'de Vesta Agent: Temalar
+Android'de Vesta Agent: Modeller
+Android'de Vesta Agent: Sohbet
+Alt bilgi
+Vesta Agent; sesli aramalar, ekran görme, telefon kontrolü, sohbetten yönetebildiğin arka plan görevleri, çok ajanlı grup sohbeti, NVIDIA NIM ve birçok başka model, 15 tema ve cihazında kalan hafızayla Windows, Android ve Linux için ücretsiz kişisel yapay zekâ asistanıdır.
+Vesta Agent 1.8.0'ı Windows, Android ve Linux için indir
+› İndir
+Vesta Agent'ı Windows 10/11, Windows 7/8, Android (APK) ve Linux (.deb ve AppImage) için adım adım kurulum talimatlarıyla ücretsiz indir. Ücretsiz iPhone web uygulaması dahil.
+Vesta Agent SSS - Sık sorulan sorular
+› SSS
+Vesta Agent hakkında sık sorulan sorulara yanıtlar: fiyat, veri depolama, İran'da kullanım, desteklenen yapay zekâ modelleri, güncellemeler ve Windows SmartScreen uyarısı.
+Vesta Agent Özellikleri - Ses, Ekran Görme, Telefon Kontrolü
+› Özellikler
+Vesta Agent özellikleri: sesli aramalar, ekran görme, Android telefon kontrolü, çok ajanlı grup sohbeti, yerel hafıza, çoklu anahtar yedekleme, Telegram, İran için proxy ve Ollama ile çevrimdışı mod.
+Vesta Agent Gizlilik - Verilerin cihazında kalır
+› Gizlilik
+Vesta Agent verilerini nasıl gizli tutar: Vesta sunucusu yok, çevrimiçi veritabanı yok, yerelde şifrelenmiş API anahtarları ve yalnızca cihazında saklanan hafıza.
+Vesta Agent Ekran Görüntüleri - Masaüstü ve Android
+› Ekran görüntüleri
+Masaüstü ve Android'de Vesta Agent'ın gerçek ekran görüntüleri: sohbet, grup sohbeti, araçlar, ekran paylaşımı, sesli arama, ajan mağazası, Telegram ve proxy ayarları.
+Vesta Agent Destek - Telegram'da yardım al
+› Destek
+Vesta Agent için yardım al: resmi Telegram destek botu @VestaAgentSupportBot'a hata bildir, soru sor ya da öneri gönder.

@@ -1,0 +1,222 @@
+html
+Vesta Agent - Assistant IA personnel pour Windows, Android et Linux
+Vesta Agent
+Fonctionnalités
+Captures d'écran
+Télécharger
+FAQ
+Assistance
+Confidentialité
+Obtenir l'app
+Assistant IA personnel · v
+travaille pour toi.
+Ton propre agent IA qui parle, voit ton écran, contrôle ton téléphone et fait le travail. Tout reste sur ton appareil.
+Le voir en action
+Gratuit pour Windows, Android, Linux et iPhone · Version
+Regarder
+Vesta en
+30 secondes.
+Île flottante, tâches en arrière-plan, apps et fichiers, appels vocaux, thèmes et modèles gratuits. Sous-titres en 10 langues.
+Capacités
+Tout ce qu'un assistant
+devrait
+faire.
+Une seule app, des agents puissants, et aucun serveur à nous entre les deux.
+Continue de travailler pendant que tu discutes
+Les longues tâches tournent en arrière-plan avec une carte d'état en direct. Continue à discuter, demande où ça en est, change le plan ou annule : la tâche continue.
+Contrôle du téléphone
+L'agent touche, tape et navigue sur Android, même sans ordinateur.
+Appels vocaux
+Parle naturellement et entends des réponses parlées. Partage ton écran pendant l'appel et demande ce qui ne va pas.
+Vision de l'écran
+Avec ta permission, l'agent voit ton écran, l'explique et t'aide à corriger.
+Discussion de groupe multi-agents
+Mets des agents spécialisés dans une même salle et laisse-les se répartir le travail.
+Mémoire stockée localement
+Une mémoire intelligente qui vit uniquement sur ton appareil. Consulte-la, modifie-la ou efface-la à tout moment.
+Telegram
+Connecte ton propre bot ou ton compte personnel et programme des messages.
+Bascule entre plusieurs clés
+Ajoute plusieurs clés API par agent. Quand l'une est épuisée, la suivante poursuit la même tâche.
+Proxy pour l'Iran
+Vrai proxy HTTP et SOCKS5 par service, avec un guide pas à pas intégré.
+Mode hors ligne
+Tourne entièrement sur ton ordinateur avec Ollama. Rien ne quitte la machine.
+La confidentialité d'abord
+Pas de compte et pas de base de données dans le cloud. Les clés sont chiffrées sur ton appareil.
+Île flottante
+Une petite pastille toujours au premier plan : progression, validations et discussion rapide depuis n'importe où.
+15 thèmes
+Minuit, Aurore, Océan, noir AMOLED, Papier et plus, appliqués avec une transition douce. Chaque agent garde sa propre forme et sa couleur.
+Des fichiers créés par les agents
+Les agents créent PDF, Word, Excel, ZIP et médias, avec aperçus et avertissement de sécurité avant les programmes.
+NVIDIA NIM et d'autres modèles
+Gemini, OpenAI, Anthropic, xAI, OpenRouter, DeepSeek, Groq, Mistral, NVIDIA NIM et modèles locaux, avec une liste de modèles consultable.
+Des rappels qui se déclenchent
+Les tâches programmées et les rappels s'exécutent même app fermée, sur Windows et Android.
+10 langues
+Anglais par défaut. Change quand tu veux et toute l'app se met à jour d'un coup, y compris le persan et l'arabe de droite à gauche.
+Crée des apps pour toi
+Sur Windows, l'agent peut écrire un petit programme et le packager en .exe, en .apk Android (avec le SDK Android installé) ou en web app installable, icône comprise.
+Un design calme et moderne
+Surfaces en verre, mouvements et sons doux, écran de verrouillage et fenêtre de mise à jour animés, et un mode Réduire les animations pour les PC et téléphones plus anciens.
+Dans l'app
+Conçu pour inspirer
+le calme.
+De vrais écrans de Vesta Agent, avec du contenu de démonstration.
+Tâches en arrière-plan
+Discute pendant qu'il travaille
+Thèmes
+15 thèmes de couleur
+Modèles
+NVIDIA NIM et plus
+Discussion
+Un vrai assistant, pas un chatbot
+Discussion de groupe
+Des agents qui travaillent ensemble
+Outils
+Exécute des commandes sur ta machine
+Partage d'écran
+L'agent voit ce que tu vois
+Appel vocal
+Conversation mains libres
+Agents
+Des spécialistes prêts à l'emploi
+Bot ou compte personnel
+Proxy
+Fonctionne là où les services sont bloqués
+Vesta Agent répond pendant qu'une tâche tourne en arrière-plan
+Tâche en arrière-plan
+Gratuit. Choisis ta
+plateforme.
+Dernière version : v
+. S'installe en moins d'une minute.
+Windows 10 / 11
+Installateur 64 bits
+Lance l'installateur.
+Si SmartScreen apparaît, clique sur More info, puis sur Run anyway.
+Ouvre Vesta Agent depuis le menu Démarrer.
+Windows 7 / 8
+Version pour PC plus anciens
+En cas d'avertissement, clique sur More info, puis sur Run anyway.
+Android
+APK pour téléphones et tablettes
+Télécharge l'APK sur ton téléphone.
+Autorise l'installation depuis cette source quand c'est demandé.
+Ouvre l'app et suis la configuration.
+iPhone / iPad
+Web app gratuite depuis Safari
+Ouvre ton adresse Vesta dans Safari.
+Touche Partager, puis Sur l'écran d'accueil.
+Discussion, voix et notifications avec Vesta sur ton PC.
+Comment installer
+Linux .deb
+Ubuntu, Debian, Mint
+Télécharge le fichier .deb.
+Exécute
+Lance-le depuis tes applications.
+Linux AppImage
+Toute distribution
+Télécharge l'AppImage.
+Double-clique pour démarrer.
+Nouveau dans 1.8 :
+un panneau flottant au-dessus de n’importe quelle app, un mode appel mains libres et « Hey Vesta », Vesta comme assistant par défaut du téléphone, une connexion intégrée quand Internet ou votre VPN ne marche pas, le choix manuel du modèle, une vidéo tutoriel dans l’app, l’envoi de photos, vidéos et fichiers dans le chat, un formulaire sécurisé pour les jetons et clés, la connexion des comptes en un geste, la création de vidéos (aussi dans des éditeurs comme Shotcut), la conception de sites à partir de références, des leçons apprises par le propriétaire et un verrouillage PIN de droite à gauche. Linux reste en 1.4.1 pour l’instant.
+Nouveau dans 1.7 :
+continue à discuter pendant qu'une tâche tourne en arrière-plan et pilote-la ou annule-la depuis la discussion, 15 thèmes, NVIDIA NIM avec une liste de modèles consultable, apps créées par l'agent (.exe, .apk, web app), suggestions selon le contexte, écran de verrouillage et fenêtre de mise à jour animés, ouverture, enregistrement et partage simples des fichiers, titres de discussion automatiques et un mode Réduire les animations.
+Notes de version
+iPhone
+Utilise Vesta sur ton
+gratuitement.
+Il n'y a pas d'app sur l'App Store. Installe Vesta comme web app depuis Safari et connecte-la à Vesta Agent sur ton PC Windows (sur le même Wi-Fi ou via Tailscale). Tu as la discussion, la voix et les notifications. Le contrôle du téléphone n'est pas disponible sur iPhone.
+Sur ton PC, ouvre Vesta Agent > Settings > Phone connection et note l'adresse (ou scanne le QR code).
+Sur l'iPhone, ouvre Safari et va à cette adresse (elle doit utiliser https quand tu n'es pas chez toi, par exemple via Tailscale).
+Touche le bouton Partager, puis
+Sur l'écran d'accueil
+, puis
+Ajouter
+Ouvre la nouvelle icône et termine la configuration. Discussion, voix et notifications fonctionnent ; l'agent utilise toujours les outils de ton PC.
+Astuce : la même adresse fonctionne aussi comme favori dans n'importe quel navigateur.
+Toutes les versions et sommes SHA256
+Voir sur GitHub
+Questions,
+réponses.
+Comment obtenir de l'aide ou signaler un bug ?
+Écris à notre bot d'assistance sur Telegram, @VestaAgentSupportBot. Envoie une description, des captures ou un message vocal et tu reçois un numéro de ticket. Les réponses arrivent dans la même discussion.
+Vesta Agent est-il gratuit ?
+Oui. Les apps Windows et Android sont gratuites, et une web app iPhone gratuite se connecte à Vesta sur ton PC. Tu utilises ta propre clé IA, par exemple une clé Gemini ou OpenRouter gratuite, ou tu fais tourner des modèles hors ligne avec Ollama.
+Où sont stockées mes données ?
+Uniquement sur ton appareil : discussions, mémoire, agents, réglages et clés chiffrées. Il n'y a pas de serveur de discussion Vesta. Les statistiques d'usage anonymes facultatives (identifiant d'installation aléatoire, version, système, langue, pays, type d'appareil et temps passé) peuvent être désactivées dans les réglages.
+Est-ce que ça marche en Iran ?
+Oui. Ajoute un proxy dans les réglages, par exemple le port local de v2rayN ou NekoBox, et choisis quels services l'utilisent. Un guide intégré montre chaque étape.
+Quels modèles d'IA sont pris en charge ?
+Gemini, OpenAI, Anthropic, xAI (Grok), OpenRouter, DeepSeek, Groq, Mistral, Together, NVIDIA NIM, tout fournisseur compatible OpenAI, et des modèles locaux via Ollama ou LM Studio.
+Se met-il à jour automatiquement ?
+Oui. Il vérifie discrètement au lancement et n'affiche une fenêtre que si une nouvelle version existe, puis la télécharge, la vérifie et l'installe pour toi.
+Puis-je continuer à discuter pendant que l'agent travaille ?
+Oui. Depuis 1.7, les longues tâches tournent en arrière-plan de leur discussion. Demande où ça en est, ajoute ou modifie des consignes, ou annule, sans arrêter le travail.
+Qui fait Vesta Agent ?
+Persian Studio, fondé par SOBi et Mahan.
+Pourquoi Windows affiche-t-il un avertissement bleu ?
+L'installateur n'est pas encore signé avec un certificat payant. Clique sur More info, puis sur Run anyway.
+Besoin d'un coup de main ?
+Demande simplement.
+Signale un bug, pose une question ou envoie une suggestion à notre bot d'assistance Telegram. Captures, fichiers et messages vocaux sont les bienvenus. Tu reçois un numéro de ticket et nous répondons directement dans la discussion.
+Assistance sur Telegram
+Tes données
+ne quittent
+jamais la maison.
+Pas de serveurs de discussion Vesta ni de base de données en ligne de tes conversations. Discussions, mémoire et réglages restent sur ton appareil. Les statistiques d'usage anonymes facultatives (version, système, langue, pays, type d'appareil et temps passé) peuvent être désactivées, et alors rien n'est envoyé.
+Les cartes sponsorisées occasionnelles viennent d'un flux signé et ne voient jamais tes discussions. Masque n'importe quelle carte pendant 7 jours d'un simple toucher.
+Les clés API sont chiffrées localement. Mots de passe, clés et données de carte ne sont jamais enregistrés en mémoire.
+Seul le message que tu envoies va au fournisseur d'IA dont tu as ajouté la clé. Avec Ollama, rien ne sort du tout.
+Un indicateur visible reste allumé tant que le micro ou le partage d'écran est actif.
+Fais connaissance avec ton
+nouvel agent.
+Créé par Persian Studio · © 2026
+Obtenir de l'aide
+GitHub
+Principal
+Vesta Agent sur GitHub
+Logo de Vesta Agent
+Vidéo de présentation de Vesta Agent, 33 secondes
+Vesta Agent répond à une question pendant qu'une tâche tourne en arrière-plan
+Écran d'appel vocal de Vesta Agent
+Discussion Vesta Agent pendant que l'agent voit l'écran
+Réglages des clés API de Vesta Agent
+Galerie de thèmes dans les réglages de Vesta Agent
+Liste consultable des modèles NVIDIA NIM dans Vesta Agent
+Écrans
+Galerie de 15 thèmes
+Liste de modèles consultable avec les modèles NVIDIA NIM
+Discussion Vesta Agent avec un planning hebdomadaire
+Discussion de groupe où Chercheur, Ops serveur et Rédacteur se partagent une tâche
+Agent qui exécute des outils et rapporte le résultat
+Indicateur de partage d'écran pendant la discussion
+Écran d'appel vocal
+Boutique d'agents avec des agents prêts à l'emploi
+Réglages Telegram
+Réglages du proxy avec routage par service
+Vesta Agent sur Android : tâche en arrière-plan
+Vesta Agent sur Android : thèmes
+Vesta Agent sur Android : modèles
+Vesta Agent sur Android : discussion
+Pied de page
+Vesta Agent est un assistant IA personnel gratuit pour Windows, Android et Linux avec appels vocaux, vision de l'écran, contrôle du téléphone, tâches en arrière-plan pilotables depuis la discussion, discussion de groupe multi-agents, NVIDIA NIM et de nombreux autres modèles, 15 thèmes et une mémoire qui reste sur ton appareil.
+Télécharger Vesta Agent 1.8.0 pour Windows, Android et Linux
+› Télécharger
+Télécharge Vesta Agent gratuitement pour Windows 10/11, Windows 7/8, Android (APK) et Linux (.deb et AppImage), avec des instructions d'installation pas à pas. Web app iPhone gratuite incluse.
+FAQ Vesta Agent - Questions fréquentes
+› FAQ
+Réponses aux questions fréquentes sur Vesta Agent : prix, stockage des données, utilisation en Iran, modèles d'IA pris en charge, mises à jour et avertissement SmartScreen de Windows.
+Fonctionnalités de Vesta Agent - Voix, vision de l'écran, contrôle du téléphone
+› Fonctionnalités
+Fonctionnalités de Vesta Agent : appels vocaux, vision de l'écran, contrôle du téléphone Android, discussion de groupe multi-agents, mémoire locale, bascule entre plusieurs clés, Telegram, proxy pour l'Iran et mode hors ligne avec Ollama.
+Confidentialité de Vesta Agent - Tes données restent sur ton appareil
+› Confidentialité
+Comment Vesta Agent protège tes données : pas de serveurs Vesta, pas de base de données en ligne, clés API chiffrées localement et mémoire stockée uniquement sur ton appareil.
+Captures d'écran de Vesta Agent - Ordinateur et Android
+› Captures d'écran
+Vraies captures de Vesta Agent sur ordinateur et Android : discussion, discussion de groupe, outils, partage d'écran, appel vocal, boutique d'agents, Telegram et réglages du proxy.
+Assistance Vesta Agent - De l'aide sur Telegram
+› Assistance
+Obtiens de l'aide pour Vesta Agent : signale un bug, pose une question ou envoie une suggestion au bot d'assistance officiel sur Telegram @VestaAgentSupportBot.
