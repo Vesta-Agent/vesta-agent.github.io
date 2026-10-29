@@ -1,0 +1,74 @@
+# Vesta Agent - one-line installer for Windows
+# Usage (PowerShell):  irm vesta-agent.github.io/i | iex
+# Windows 7 (PowerShell 2):
+#   [Net.ServicePointManager]::SecurityProtocol=3072;iex(New-Object Net.WebClient).DownloadString('https://vesta-agent.github.io/i/')
+# Downloads the latest installer from github.com/Vesta-Agent/vesta-agent-releases,
+# checks its SHA256 and runs it. No telemetry, nothing else.
+& {
+$ErrorActionPreference = 'Stop'
+$repo = 'Vesta-Agent/vesta-agent-releases'
+$fbVer = '1.8.1'
+function Say($en, $fa) { Write-Host "[Vesta] $en" -ForegroundColor Cyan; if ($fa) { Write-Host "        $fa" } }
+function Fail($en, $fa) { Write-Host "[Vesta] ERROR: $en" -ForegroundColor Red; if ($fa) { Write-Host "        $fa" -ForegroundColor Red }; Write-Host "        https://vesta-agent.github.io/download/"; throw "Vesta install failed: $en" }
+
+try { [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor 3072 } catch {
+  Fail 'TLS 1.2 is not available. Install .NET Framework 4.5 or newer, then retry.' 'TLS 1.2 در دسترس نیست. اول .NET Framework 4.5 یا جدیدتر رو نصب کنید.'
+}
+
+if ($env:OS -ne 'Windows_NT') { Fail 'This installer is for Windows only.' 'این نصب‌کننده فقط برای ویندوزه.' }
+$v = [Environment]::OSVersion.Version
+$is64 = [IntPtr]::Size -eq 8 -or $env:PROCESSOR_ARCHITEW6432 -eq 'AMD64' -or $env:PROCESSOR_ARCHITECTURE -eq 'AMD64'
+if ($v.Major -lt 6 -or ($v.Major -eq 6 -and $v.Minor -lt 1)) { Fail 'Windows 7 or newer is required.' 'ویندوز ۷ یا جدیدتر لازمه.' }
+if ($v.Major -ge 10) {
+  if (-not $is64) { Fail 'Windows 10/11 needs the 64-bit version of Windows.' 'برای ویندوز ۱۰ و ۱۱ نسخه ۶۴ بیتی لازمه.' }
+  $pat = 'VestaAgent-[0-9.]+-win10-11-x64-setup\.exe'; $label = 'Windows 10/11 (x64)'
+} else {
+  $pat = 'VestaAgent-[0-9.]+-win7-8-setup\.exe'; $label = 'Windows 7/8'
+}
+Say "Detected $label (Windows $($v.Major).$($v.Minor))" "سیستم شما: $label"
+
+$wc = New-Object Net.WebClient
+$wc.Headers.Add('User-Agent', 'VestaAgent-Installer')
+$url = $null; $sumsUrl = $null
+try {
+  $json = $wc.DownloadString("https://api.github.com/repos/$repo/releases/latest")
+  $m = [regex]::Match($json, '"browser_download_url"\s*:\s*"([^"]*/' + $pat + ')"')
+  if ($m.Success) { $url = $m.Groups[1].Value }
+  $m2 = [regex]::Match($json, '"browser_download_url"\s*:\s*"([^"]*/SHA256SUMS\.txt)"')
+  if ($m2.Success) { $sumsUrl = $m2.Groups[1].Value }
+} catch { }
+if (-not $url) {
+  Say "Could not read the latest release; using v$fbVer." "آخرین نسخه پیدا نشد؛ نسخه $fbVer دانلود می‌شه."
+  if ($label -like 'Windows 7*') { $n = "VestaAgent-$fbVer-win7-8-setup.exe" } else { $n = "VestaAgent-$fbVer-win10-11-x64-setup.exe" }
+  $url = "https://github.com/$repo/releases/download/v$fbVer/$n"
+  $sumsUrl = "https://github.com/$repo/releases/download/v$fbVer/SHA256SUMS.txt"
+}
+$name = $url.Substring($url.LastIndexOf('/') + 1)
+$file = Join-Path $env:TEMP $name
+
+Say "Downloading $name ..." "در حال دانلود $name ..."
+try {
+  $wc.Headers.Remove('Accept') | Out-Null
+  $wc.DownloadFile($url, $file)
+} catch { Fail "Download failed: $($_.Exception.Message)" 'دانلود ناموفق بود. اینترنت رو چک کنید و دوباره امتحان کنید.' }
+
+Say 'Verifying SHA256 ...' 'در حال بررسی سلامت فایل (SHA256) ...'
+try { $sums = $wc.DownloadString($sumsUrl) } catch { Remove-Item $file -Force -ErrorAction SilentlyContinue; Fail 'Could not download SHA256SUMS.txt.' 'فایل SHA256SUMS دانلود نشد.' }
+$em = [regex]::Match($sums, '(?im)^([0-9a-f]{64})\s+\*?' + [regex]::Escape($name) + '\s*$')
+if (-not $em.Success) { Remove-Item $file -Force -ErrorAction SilentlyContinue; Fail "No checksum found for $name." 'هش این فایل پیدا نشد.' }
+$sha = [Security.Cryptography.SHA256]::Create()
+$fs = [IO.File]::OpenRead($file)
+try { $got = -join ($sha.ComputeHash($fs) | ForEach-Object { $_.ToString('x2') }) } finally { $fs.Close() }
+if ($got -ne $em.Groups[1].Value.ToLower()) {
+  Remove-Item $file -Force -ErrorAction SilentlyContinue
+  Fail 'Checksum mismatch. The file was deleted; please retry.' 'فایل خرابه یا دستکاری شده و پاک شد. دوباره امتحان کنید.'
+}
+Say 'Checksum OK.' 'فایل سالمه.'
+
+if ($env:VESTA_NO_RUN) { Say "Test mode: skipping install ($file)."; return }
+Say 'Starting the installer ...' 'نصب‌کننده باز می‌شه، مراحل رو دنبال کنید ...'
+try { $p = Start-Process -FilePath $file -Wait -PassThru } catch { Remove-Item $file -Force -ErrorAction SilentlyContinue; Fail "Could not start the installer: $($_.Exception.Message)" 'نصب‌کننده اجرا نشد.' }
+Remove-Item $file -Force -ErrorAction SilentlyContinue
+if ($p.ExitCode -eq 0) { Say 'Done! Open Vesta Agent from the Start menu.' 'تموم شد! وستا رو از منوی استارت باز کنید.' }
+else { Say "Installer exited with code $($p.ExitCode)." "نصب‌کننده با کد $($p.ExitCode) بسته شد." }
+}
