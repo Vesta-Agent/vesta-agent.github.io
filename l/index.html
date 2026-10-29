@@ -1,0 +1,61 @@
+#!/bin/sh
+# Vesta Agent - one-line installer for Linux (x86_64 AppImage, any distribution)
+# Usage:  curl -fsSL vesta-agent.github.io/l | sh
+# Downloads the latest AppImage from github.com/Vesta-Agent/vesta-agent-releases, checks its SHA256,
+# installs it to ~/.local/bin/vesta-agent and adds an app-menu entry. No root, no telemetry.
+set -eu
+R="https://github.com/Vesta-Agent/vesta-agent-releases/releases/latest/download"
+BIN="$HOME/.local/bin"; APPS="${XDG_DATA_HOME:-$HOME/.local/share}/applications"
+ICONS="${XDG_DATA_HOME:-$HOME/.local/share}/icons/hicolor/256x256/apps"
+say() { printf '\033[36m[Vesta]\033[0m %s\n' "$1"; }
+die() { printf '\033[31m[Vesta] %s\033[0m\n' "$1" >&2; exit 1; }
+[ "$(uname -s)" = Linux ] || die "This installer is for Linux. Windows: irm vesta-agent.github.io/i | iex"
+case "$(uname -m)" in x86_64|amd64) ;; *) die "Only x86_64 (64-bit Intel/AMD) is supported for now (you have $(uname -m))." ;; esac
+if command -v curl >/dev/null 2>&1; then get() { curl -fL --progress-bar --retry 3 -o "$2" "$1"; }
+elif command -v wget >/dev/null 2>&1; then get() { wget -q -O "$2" "$1"; }
+else die "Please install curl or wget first."; fi
+command -v sha256sum >/dev/null 2>&1 || die "sha256sum not found (install coreutils)."
+T=$(mktemp -d); trap 'rm -rf "$T"' EXIT INT TERM
+say "Checking the latest version..."
+get "$R/SHA256SUMS.txt" "$T/sums" >/dev/null 2>&1 || die "Could not reach GitHub. Check your internet (or VPN) and try again."
+LINE=$(grep -E 'x86_64\.AppImage$' "$T/sums" | head -n1)
+[ -n "$LINE" ] || die "No Linux AppImage in the latest release yet."
+SUM=${LINE%% *}; NAME=${LINE##* }; NAME=${NAME#\*}
+say "Downloading $NAME ..."
+get "$R/$NAME" "$T/app" || die "Download failed."
+[ "$(sha256sum "$T/app" | cut -d' ' -f1)" = "$SUM" ] || die "Checksum mismatch, the download is damaged. Please try again."
+say "Checksum OK."
+mkdir -p "$BIN" "$APPS" "$ICONS"
+mv -f "$T/app" "$BIN/vesta-agent"; chmod +x "$BIN/vesta-agent"
+# icon: pull it out of the AppImage (works without FUSE)
+( cd "$T" && "$BIN/vesta-agent" --appimage-extract '*.png' >/dev/null 2>&1 ) || true
+ICON=$(ls -S "$T"/squashfs-root/*.png "$T"/squashfs-root/usr/share/icons/hicolor/*/apps/*.png 2>/dev/null | head -n1 || true)
+[ -n "$ICON" ] && cp -f "$ICON" "$ICONS/vesta-agent.png" || true
+cat > "$APPS/vesta-agent.desktop" <<DESK
+[Desktop Entry]
+Type=Application
+Name=Vesta Agent
+Comment=Your own AI agent
+Exec="$BIN/vesta-agent" %U
+Icon=vesta-agent
+Terminal=false
+Categories=Utility;
+StartupWMClass=vesta-agent
+DESK
+command -v update-desktop-database >/dev/null 2>&1 && update-desktop-database "$APPS" >/dev/null 2>&1 || true
+say "Installed: $BIN/vesta-agent (also in your apps menu as Vesta Agent)."
+case ":$PATH:" in *":$BIN:"*) ;; *) say "Tip: add ~/.local/bin to PATH to run 'vesta-agent' from a terminal." ;; esac
+# AppImages need FUSE 2 (libfuse.so.2) to start
+if ! { ldconfig -p 2>/dev/null | grep -q 'libfuse\.so\.2'; } && ! ls /usr/lib*/libfuse.so.2* /usr/lib/*/libfuse.so.2* >/dev/null 2>&1; then
+  ID=""; ID_LIKE=""; [ -r /etc/os-release ] && . /etc/os-release
+  case " $ID $ID_LIKE " in
+    *" ubuntu "*|*" debian "*) H="sudo apt install libfuse2   (Ubuntu 24.04+: sudo apt install libfuse2t64)" ;;
+    *" fedora "*|*" rhel "*|*" centos "*) H="sudo dnf install fuse-libs" ;;
+    *" arch "*|*" manjaro "*) H="sudo pacman -S fuse2" ;;
+    *" opensuse"*|*" suse "*) H="sudo zypper install libfuse2" ;;
+    *) H="install your distribution's FUSE 2 package (libfuse2 / fuse2 / fuse-libs)" ;;
+  esac
+  say "One more step: Vesta needs FUSE 2. Run:  $H"
+  say "(Or start without FUSE:  vesta-agent --appimage-extract-and-run)"
+fi
+say "Done. Start Vesta Agent from your apps menu or run: $BIN/vesta-agent"
