@@ -1,5 +1,5 @@
 # Vesta Agent website
 
-Marketing site for Vesta Agent: https://vesta-agent.github.io
+The official site is now https://vestaagent.ir
 
-Downloads: https://github.com/Vesta-Agent/vesta-agent-releases
+This GitHub Pages site redirects every page there so old links keep working.
